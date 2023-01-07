@@ -1,0 +1,287 @@
+/* RESET CSS */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* FIN RESET*/
+
+@font-face {
+    font-family: "Titan One";
+    src: url("../fonts/TitanOne-Regular.ttf");
+}
+
+*
+{
+    margin: 0; 
+    padding: 0;
+    font-family: 'Titan One', cursive;
+    scroll-behavior: smooth;
+    user-select: none;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+#jeu {display: none;}
+#loadingScreen{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+}
+
+.menu {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    transition: transform .6s ease-in-out;
+    display: inline-block;
+    background-color: rgb(53, 53, 53);
+}
+
+.animMenu {
+    transform: translateX(-100vw);
+    transition: transform .6s ease-in-out;
+}
+
+#optionsMenu {float: right;}
+/*#controls {display: none;}*/
+.mc-container {
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2%;
+    background-color: rgb(85, 85, 85);
+}
+
+h1 {
+    font-size: 3.5rem;
+    margin: 15px 0;
+}
+
+.button {
+    font-size: 1rem;
+    cursor: pointer;
+    border: 3px solid black;
+    border-radius: 5px;
+    color: black;
+    margin-top: 10px;
+    padding: 5px;
+    width: max-content;
+}
+
+.button:hover {
+    color: grey;
+}
+
+.content-version {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 0.8rem;
+    padding: 10px;
+    background-color: rgb(150,150,150);
+}
+
+#optionsMenu {
+    font-size: 30px;
+    display: none;
+}
+
+.content-options {
+    font-weight: bold;
+    border-radius: 3px;
+    padding: 20px 50px;
+    background-color: rgb(85, 85, 85);
+}
+
+.content-items {
+    min-height: 200px;
+    display: none;
+    padding: 10px;
+    margin: 10px;
+    color: white;
+    background-color: rgb(110, 110, 110);
+    overflow: auto;
+}
+#audio-options{display: block;}
+
+.items {
+    width: 75%;
+    display: flex;
+    margin: 5px auto;
+    padding: 10px;
+    background-color: rgb(131, 131, 131);
+    border-radius: 2px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.label {
+    width: 150px;
+    background-color: rgb(151, 151, 151);
+}
+
+.input{
+    display: flex;
+    align-items: center;
+    background-color: rgb(187, 187, 187);
+}
+input[type=range]{
+    width: 200px;
+}
+.value {
+    width: 50px;
+    display: inline-block;
+    font-size: 25px;
+    margin-right: 20px;
+    background-color: rgb(219, 219, 219);
+}
+#nav-bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.optionsMenu {
+    margin: 10px 0;
+    font-size: 40px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+.optionsMenu:hover {
+    color: darkgrey;
+}
+.optionsMenu.active {
+    color: darkgrey;
+}
+.content-button{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(238, 238, 238);
+}
+
+#btnSaveSettings {
+    align-self: center;
+}
+
+/* JEU */
+video {
+    display: block;
+    z-index: 1;
+    height: 100vh;
+    width: 100vw;
+}
+#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 15px 30px;
+    -webkit-box-shadow: inset 0px 0px 50px 20px rgba(0,0,0,0.5); 
+    box-shadow: inset 0px 0px 50px 20px rgba(0,0,0,0.5);
+    z-index: 10;
+    transition: opacity .4s linear;
+}
+#overlay.is-visible {
+    opacity: 1;
+    transition: opacity .4s linear;
+}
+#controls {
+    display: flex;
+    justify-content: center;
+}
+#controlItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid black;
+    width: max-content;
+}
+.controlBtn {
+    padding: 5px 10px;
+}
+
+#choices {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+}
+.choice {
+    height : 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid black;
+    border-left: 0;
+    text-decoration: none;
+    color: black;
+    transition: all .3s ease-in-out;
+}
+.choice:hover{
+    background-color: #dadada;
+}
+.choice:last-child {
+    border-right: 0;
+}

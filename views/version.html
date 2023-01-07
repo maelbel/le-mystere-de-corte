@@ -1,0 +1,37 @@
+<!--index.html-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+        <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+        <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <title>Version du jeu</title>
+    <style>
+        body {
+            overflow: hidden;
+            width: 100%;
+            height: 100vh;
+            transform: translate(-10px, -15px);
+        }
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #version {
+            margin-left: 5px;
+        }
+        #author {
+            margin-left: 5px;
+        }
+    </style>
+  </head>
+  <body>
+    <div>Description: <br><span id="description"></span></div>
+    <div>Version: <span id="version"></span></div>
+    <div>Author: <span id="author"></span></div>
+    <script src="../renderer.js"></script>
+  </body>
+</html>

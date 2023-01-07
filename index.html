@@ -1,0 +1,141 @@
+<!--index.html-->
+
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <title>Le Mystère de Corte</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/bootstrap/bootstrap.css" type="text/css"/>
+    <link rel="stylesheet" href="./assets/css/style.css" type="text/css"/>
+  </head>
+
+  <body>
+    <audio id="music" src="./assets/musique/menu_music.wav" type="audio/wav" loop></audio>
+    
+    <div id="interface">
+      <div class="menu" id="mainMenu">
+        <div class="mc-container">
+          <h1>Le Mystère de Corte</h1>
+          <nav>
+            <div class="button" id="new">Nouvelle partie</div>
+            <div class="button" id="charge">Charger la partie</div>
+            <div class="button" id="options">Options</div>
+            <div class="button" id="quitGame">Quitter</div>
+          </nav>
+          <div class="content-version">
+            Version <span id="version"></span>
+          </div>
+        </div>
+      </div>
+  
+      <div class="menu" id="optionsMenu">
+        <div class="mc-container">
+          <h1>Options</h1>
+          <div class="content-options">
+              <div id="nav-bar">
+                  <a id="audio" class="optionsMenu active">AUDIO</a>
+                  <a id="window" class="optionsMenu">FENÊTRE</a>
+                  <a id="shortcuts" class="optionsMenu">RACCOURCIS</a>
+                  <a id="save" class="optionsMenu">SAUVEGARDE</a>
+              </div>
+              <hr>
+              <div class="content-items" id="audio-options">
+                <div class="items">
+                  <div class="label">Musique</div>
+                  <div class="input"><input type="range" id="volumeMusic" name="volumeMusic" 
+                      value="100" min="0" max="100" step="1">
+                  </div>
+                  <div class="value" id="percentMusic"></div>
+                </div>
+                <div class="items">
+                    <div class="label">Vidéo</div>
+                    <div class="input">
+                        <input type="range" id="volumeVid" name="volumeVid" 
+                        min="0" max="100" step="1">
+                    </div>
+                    <div class="value" id="percentVid"></div>
+                </div>
+              </div>
+              <div class="content-items" id="window-options">
+                <div class="items">
+                  <div class="label">Mode d'affichage</div>
+                  <select id="ModeAffichage">
+                    <option value="1">Plein écran</option>
+                    <option value="2">Plein écran fenêtré</option>
+                    <option value="3">fenêtré</option>
+                  </select>
+                  <div class="button" id="btnApplyModeAff">Appliquer</div>
+                </div>
+                <div class="items">
+                  <div class="label">Résolution</div>
+                  <select id="Resolution">
+                    <option value="1">3840x2160</option>
+                    <option value="2">2560x1600</option>
+                    <option value="3">1920x1200</option>
+                    <option value="4">1920x1080</option>
+                    <option value="5">1600x900</option>
+                    <option value="6">1280x720</option>
+                    <option value="7">800x600</option>
+                  </select>
+                  <div class="button" id="btnApplyResolution">Appliquer</div>
+                </div>
+              </div>
+              <div class="content-items" id="shortcuts-options">
+                <div class="items">
+                  <div class="label">FullScreen</div>
+                  <div class="shortcut">F11</div>
+                </div>
+                <div class="items">
+                  <div class="label">Lancer/arrêter la vidéo</div>
+                  <div class="shortcut">Espace</div>
+                </div>
+              </div>
+              <div class="content-items" id="save-options">
+                <div class="items">
+                  <div class="label">Dernière sauvegarde</div>
+                  <div class="input" id="lastSave"></div>
+                </div>
+              </div>
+              <div class="content-button">
+                <div class="button" id="btnSaveSettings">Sauvegarder</div>
+                <div class="button" id="quitOptions">Retour</div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="jeu">
+      <div id="overlay">
+        <div id="titre"></div>
+        <div id="controls">
+          <div id="controlItem">
+            <div class="controlBtn" id="rMenu" title="Retour au menu">Menu</div>
+            <div class="controlBtn" id="pVid" title="Scène précédente">◄</div>
+            <div class="controlBtn" id="previousSec" title="5sec en arrière"><span id="fiveSec">◄◄</span></div>
+            <div class="controlBtn" id="statut" title="jouer/arrêter"><span id="pause"></span></div>
+            <div class="controlBtn" id="sVid" title="Scène suivante">►</div>
+            <div class="controlBtn" id="optionJeuBtn" title="Afficher les options">Options</div>
+            <div class="controlBtn" id="back" title="Retour au choix précédent">Retour</div>
+          </div>
+          <div id="optionJeu"></div>
+        </div>
+        <div id="choices"></div>
+      </div>
+      <video type="video/mp4"></video>
+    </div>
+    
+    
+    <!-- Vous pouvez également requérir que d’autres fichiers s’exécutent dans ce processus -->
+    <script type="text/javascript" src="./assets/js/jquery-3.6.3.js"></script>
+    <script type="text/javascript" src="./renderer.js"></script>
+    <script type="text/javascript" src="./assets/data/choices.js"></script>
+    <script type="text/javascript" src="./models/choix.js"></script>
+    <script type="text/javascript" src="./models/video.js"></script>
+    <script type="text/javascript" src="./assets/js/index.js"></script>
+  </body>
+</html>
