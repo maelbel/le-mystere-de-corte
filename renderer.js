@@ -1,0 +1,390 @@
+  //////////////////////////////////
+///           VARIABLES           ///
+  //////////////////////////////////
+
+const music = document.getElementById("music");
+const video = document.getElementById("video");
+
+const loading = $("#loading");
+
+// Main-menu
+const mainMenu = $("#main-menu");
+
+const newButton = $("#new-button");
+const loadButton = $("#load-button");
+const settingsButton = $("#settings-button");
+const quitButton = $("#quit-button");
+
+// Settings-menu
+const settingsMenu = $("#settings-menu");
+
+const musicVolume = $("#music-volume");
+const videoVolume = $("#video-volume");
+
+const musicPercent = $("#music-percent");
+const videoPercent = $("#video-percent");
+
+const backMenu = $("#back-menu");
+
+// Game-menu
+const gameMenu = $("#game-menu");
+
+const contentControls = $("#content-controls");
+const backButton = $("#back-button");
+const backSecond = $('#back-second');
+const nextChoice = $('#next-choice');
+
+const play = $("#pause-play");
+const contentVideo = $("#content-video");
+const contentText = $("#content-text");
+
+const contentChoices = $("#content-choices");
+
+const gameSettingsButton = $('#game-settings-button');
+const contentGameSettings = $("#content-game-settings");
+const closeButton = $("#close-button");
+const saveButton = $("#save-button");
+
+let played = false;
+
+  //////////////////////////////////
+///         INITIALISATION         ///
+  //////////////////////////////////
+
+// Lance la musique lors du chargement de l'interface
+$(window).on('DOMContentLoaded', function () {
+    // On lance la musique
+    music.play();
+
+    // On cache les éléments inutiles
+    gameMenu.hide();
+    settingsMenu.hide();
+    contentChoices.hide();
+    backButton.hide();
+    contentGameSettings.hide();
+
+    // Initialisation des volumes
+    setMusicVolume(musicVolume.val());
+    setVideoVolume(videoVolume.val());
+});
+
+newButton.on('click', () => {
+    window.electronAPI.sendShowLoader();
+    switchDisplay(mainMenu, gameMenu);
+    setTimeout(() => {
+        window.electronAPI.sendNewGameState();
+    }, 2000);
+});
+
+loadButton.on('click', () => {
+    window.electronAPI.sendShowLoader();
+    switchDisplay(mainMenu, gameMenu);
+    setTimeout(() => {
+        window.electronAPI.sendLoadGameState();
+    }, 2000);
+});
+
+quitButton.on('click', () => {
+    window.electronAPI.sendQuitGame();
+});
+
+window.electronAPI.loadGameData().then((data) => {
+    gameData = data;
+    // Initialisation de l'interface du jeu
+}).catch((error) => {
+    console.error('Erreur lors du chargement des données du jeu:', error);
+});
+
+window.electronAPI.onUpdateGameState((event, gameState) => {
+    updateGameUI(gameState);
+});
+
+function updateGameUI(gameState) {
+    let intervalShowChoices;
+
+    const currentNode = gameData[gameState.currentNode];
+    if(!currentNode) return;
+
+    contentChoices.html("");
+    contentChoices.hide();
+    contentText.hide();
+    contentVideo.hide();
+
+    if(intervalShowChoices) clearInterval(intervalShowChoices);
+
+    if(currentNode.video) {
+        switchDisplay(contentText, contentVideo);
+        video.src = currentNode.video;
+        // On crée un moteur qui lance showChoices toutes les centièmes de seconde
+        intervalShowChoices = setInterval(showChoices, 100);
+    } else {
+        video.src = "";
+        contentText.html(`<h2>${gameState.currentNode.charAt(0).toUpperCase() + gameState.currentNode.slice(1)}</h2><br/><p id="text-replace">${gameState.text}</p>`);
+        switchDisplay(contentVideo, contentText);
+        contentChoices.show();
+    }
+
+    if (currentNode.choices){
+        for (const [key, value] of Object.entries(currentNode.choices)) {
+            let optionText = value;
+            let conditionMet = true;
+
+            if (typeof value === 'object') {
+                optionText = value.text;
+                conditionMet = gameState.history.includes(value.condition);
+            }
+
+            if(conditionMet){
+                const button = document.createElement('button');
+                button.className = 'choice-button';
+                button.textContent = optionText;
+                button.onclick = () => {
+                    gameState.history.push(gameState.currentNode);
+                    gameState.currentNode = key;
+                    window.electronAPI.sendSaveGameState(gameState);
+                    updateGameUI(gameState);
+                };
+                contentChoices.append(button);
+            }
+
+            if (gameState.history.length > 0) {
+                backButton.show();
+            } else {
+                backButton.hide();
+            }
+        }
+    }
+}
+
+function showChoices() {
+    if (video.currentTime + 3 > video.duration) {
+        contentChoices.fadeIn('slow');
+    } else {
+        contentChoices.hide();
+    }
+}
+
+function switchDisplay(from, to) {
+    from.hide();
+    to.fadeIn('slow');
+}
+
+video.addEventListener('canplay', function (){
+    video.play();
+});
+
+backButton.on('click', () => {
+    if (stateHistory.length > 0) {
+        currentState = stateHistory.pop();
+        renderState(currentState);
+        saveState(); // Save the state after going back
+    }
+});
+
+saveButton.on('click', () => {
+    video.pause();
+    saveState();
+    closeButton.trigger('click');
+    music.load();
+    music.play();
+    switchDisplay(gameMenu, mainMenu);
+});
+
+  //////////////////////////////////
+///            OPTIONS             ///
+  //////////////////////////////////
+
+settingsButton.on("click", () => {
+    switchDisplay(mainMenu, settingsMenu);
+})
+
+backMenu.on("click", () => {
+    switchDisplay(settingsMenu, mainMenu);
+});
+
+// NAV-BAR
+const btnOptionsList = ["audio","window","shortcuts","save"];
+let btnList = [];
+let contentList = [];
+
+for(let button of btnOptionsList){
+    let btn = document.getElementById(button);
+    let content = document.getElementById(button + "-settings");
+    btnList.push(btn);
+    contentList.push(content);
+    if(btn && contentList){
+        btn.addEventListener("click", onAir, false);
+    }else{console.error("Button or content doesn't exist!");}
+}
+
+function onAir(evt){
+    let nbBtn = btnList.length;
+    let id = evt.target.id;
+    let content = document.getElementById(id + "-settings");
+    for(let i=0;i<nbBtn;i++){
+        btnList[i].classList.remove("active");
+        contentList[i].style.display = "none";
+    }
+    evt.target.classList.add("active");
+    content.style.display = "block";
+}
+
+// AUDIO
+function setMusicVolume(value) {
+    // On définit le volume sur 100%
+    music.volume = value/100;
+    // On affiche le pourcentage du volume
+    musicPercent.html(" " + value + "%");
+}
+
+function setVideoVolume(value) {
+    // On définit le volume sur 100%
+    video.volume = value/100;
+    // On affiche le pourcentage du volume
+    videoPercent.html(" " + value + "%");
+}
+
+// Au mouvement sur le musicVolume
+musicVolume.on('mousemove', () => {
+    setMusicVolume($(this).val());
+});
+
+// Au mouvement sur le videoVolume
+videoVolume.on('mousemove', () => {
+    setVideoVolume($(this).val());
+});
+
+
+  //////////////////////////////////
+///   LANCER OU STOPPER LA VIDEO   ///
+  //////////////////////////////////
+
+// Si on click = lance ou stop la vidéo
+play.on("click", toggleStateVideo);
+
+// Si la touche espace est appuyée
+$(document).on("keydown", function (e) {
+    if (e.code == 'Space') {
+        //lancer/stopper la vidéo
+        toggleStateVideo();
+    }
+});
+
+let isHidden = true;
+// Fonction pour lancer/arreter la vidéo
+function toggleStateVideo() {
+    // Si la vidéo est jouée
+    if (played) {
+        // On la pause
+        video.pause();
+        // On affiche le curseur 
+        play.css("cursor", "auto");
+
+        // On affiche les controles
+        contentControls.addClass('is-visible');
+        isHidden = false;
+        // On change par faux et renvoie la variable pour dire qu'elle n'est plus jouée
+        played = false;
+        return played;
+    } else {
+        // On joue la vidéo
+        video.play();
+        // On met un delai avant de
+        setTimeout(function() {
+                // Cacher le curseur
+                play.css("cursor", "none");
+                // Cacher les controles
+                contentControls.removeClass('is-visible');
+                isHidden = true;
+        }, 2000);
+        // On change par vrai et renvoie la variable pour dire qu'elle est jouée
+        played = true;
+        return played;
+    }
+}
+
+/*      LES CONTROLES      */
+let timeout;
+
+// Quand la souris bouge sur la div play, on lance la fonction magicMouse
+play.on("mousemove", controls);
+
+// La fameuse fonction controls
+function controls() {
+    // Si timeout existe
+    if (timeout) {
+        // On clear
+        clearTimeout(timeout);
+    }
+    timeout = setTimeout(function() {
+        // Si les controles sont visibles et que la vidéo est jouée
+        if (!isHidden && played) {
+            // On cache le curseur
+            play.css("cursor", "none");
+            // On cache les controles
+            contentControls.removeClass('is-visible');
+            isHidden = true;
+        }else{
+            // Sinon on affiche le curseur
+            play.css("cursor", "auto");
+            // On affiche les controles
+            contentControls.addClass('is-visible');
+            isHidden = false;
+        }
+    }, 2000); // Après un compteur de 2s
+    // Si les controles sont cachés
+    if (isHidden) {
+        // On affiche le curseur 
+        play.css("cursor", "auto");
+        // On affiche les controles
+        contentControls.addClass('is-visible');
+        isHidden = false;
+    }
+};
+
+// Quand la souris passe sur les controles
+contentControls.on("mouseover", function(){
+    // On affiche le curseur
+    play.css("cursor", "auto");
+    // On affiche les controles
+    contentControls.addClass('is-visible');
+    isHidden = false;
+});
+
+// Quand la souris passe sur les choix 
+contentChoices.on("mouseover", function(){
+    // On cache les controles
+    contentControls.removeClass('is-visible');
+    isHidden = true;
+});
+
+
+
+// Au clic sur option en jeu
+gameSettingsButton.on("click", function(){
+    // On affiche les options du jeu
+    contentGameSettings.show();
+});
+
+
+// Au clic sur retour en jeu
+closeButton.on("click", function(){
+    // On affiche les options du jeu
+    contentGameSettings.hide();
+});
+
+
+// Au clic sur previousSec
+backSecond.on('click', function(){
+    // On enlève 5s à la vidéo
+    video.currentTime = (video.currentTime)-5;
+});
+
+// Pour nous les développeurs 
+/*      VIDEO SUIVANTE      */
+
+// Au clic sur la sVid
+nextChoice.on("click", function(){
+    // On passe directement au choix
+    video.currentTime = (video.duration)-5;
+});

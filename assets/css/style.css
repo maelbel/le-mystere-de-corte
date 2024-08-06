@@ -1,55 +1,3 @@
-/* RESET CSS */
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-    display: block;
-}
-
-body {
-    line-height: 1;
-}
-
-ol, ul {
-    list-style: none;
-}
-
-blockquote, q {
-    quotes: none;
-}
-
-    blockquote:before, blockquote:after,
-    q:before, q:after {
-        content: '';
-        content: none;
-    }
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-/* FIN RESET*/
-
 @font-face {
     font-family: "Titan One";
     src: url("../fonts/TitanOne-Regular.ttf");
@@ -67,62 +15,66 @@ table {
 body {
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
-}
-#jeu {display: none;}
-#loadingScreen{
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-    background-color: white;
+    background-color: #000;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* MENU */
 .menu {
-    height: 100vh;
     width: 100vw;
+    height: 100vh;
     margin: 0;
-    transition: transform .6s ease-in-out;
-    display: inline-block;
-    background-color: rgb(53, 53, 53);
+    background-image: url("../images/background-corte.png");
+    background-position: center;
+    background-size: cover;
 }
 
-.animMenu {
-    transform: translateX(-100vw);
-    transition: transform .6s ease-in-out;
-}
-
-#optionsMenu {float: right;}
-/*#controls {display: none;}*/
-.mc-container {
-    height: 80%;
+.container {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 2%;
-    background-color: rgb(85, 85, 85);
+    align-items: center;
 }
 
 h1 {
-    font-size: 3.5rem;
+    font-size: 4rem;
     margin: 15px 0;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .button {
     font-size: 1rem;
-    cursor: pointer;
-    border: 3px solid black;
-    border-radius: 5px;
-    color: black;
-    margin-top: 10px;
-    padding: 5px;
+    text-align: center;
     width: max-content;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 2px solid black;   
+    background-color: rgba(0, 0, 0, 0.6); 
+    color: #FFF;
+    cursor: pointer;
 }
 
-.button:hover {
-    color: grey;
+.button:focus-visible {
+    outline: none;
+}
+
+.button:hover:not(:disabled) {
+    color: gray;
+}
+
+/* MAIN MENU */
+#menu-container {
+    height: 50%;
+}
+
+nav{
+    display: flex;
+    gap: 10px;
 }
 
 .content-version {
@@ -132,156 +84,235 @@ h1 {
     right: 0;
     font-size: 0.8rem;
     padding: 10px;
-    background-color: rgb(150,150,150);
+    color: #ededed;
 }
 
-#optionsMenu {
+/* OPTIONS */
+#settings-menu {
     font-size: 30px;
-    display: none;
+}
+#settings-container {
+    height: 100%;
 }
 
-.content-options {
-    font-weight: bold;
-    border-radius: 3px;
-    padding: 20px 50px;
-    background-color: rgb(85, 85, 85);
+#content-settings {
+    width: 80%;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0, 0.6);
+}
+
+#nav-settings {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.setting-button {
+    margin: 10px 0;
+    font-size: 40px;
+    text-decoration: none;
+    color: darkgrey;
+    cursor: pointer;
+}
+.setting-button:hover, .setting-button.active {
+    color: #ededed;
 }
 
 .content-items {
-    min-height: 200px;
     display: none;
-    padding: 10px;
-    margin: 10px;
+    margin: 20px;
     color: white;
-    background-color: rgb(110, 110, 110);
-    overflow: auto;
 }
-#audio-options{display: block;}
+#audio-settings{display: block;}
 
-.items {
-    width: 75%;
+.item {
+    font-size: 25px;
+    width: 100%;
+    padding: 10px 0;
     display: flex;
-    margin: 5px auto;
-    padding: 10px;
-    background-color: rgb(131, 131, 131);
-    border-radius: 2px;
-    align-items: center;
-    justify-content: space-between;
 }
-
-.label {
-    width: 150px;
-    background-color: rgb(151, 151, 151);
+.item :nth-child(n) {
+    width: calc(100%/3);
 }
 
 .input{
     display: flex;
-    align-items: center;
-    background-color: rgb(187, 187, 187);
+    justify-content: center;
 }
 input[type=range]{
     width: 200px;
 }
 .value {
-    width: 50px;
-    display: inline-block;
-    font-size: 25px;
-    margin-right: 20px;
-    background-color: rgb(219, 219, 219);
-}
-#nav-bar {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: flex-end;
 }
-.optionsMenu {
-    margin: 10px 0;
-    font-size: 40px;
-    text-decoration: none;
-    color: black;
-    cursor: pointer;
-}
-.optionsMenu:hover {
-    color: darkgrey;
-}
-.optionsMenu.active {
-    color: darkgrey;
-}
-.content-button{
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(238, 238, 238);
+.value .button {
+    margin-top: 0;
 }
 
-#btnSaveSettings {
-    align-self: center;
+.content-button{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
 }
 
 /* JEU */
-video {
-    display: block;
-    z-index: 1;
-    height: 100vh;
-    width: 100vw;
-}
-#overlay {
-    position: absolute;
+#content-controls {
+    position: fixed;
     top: 0;
     left: 0;
-    opacity: 0;
-    width: 100vw;
-    height: 100vh;
-    padding: 15px 30px;
-    -webkit-box-shadow: inset 0px 0px 50px 20px rgba(0,0,0,0.5); 
-    box-shadow: inset 0px 0px 50px 20px rgba(0,0,0,0.5);
+    margin: 10px;
     z-index: 10;
+    font-size: 20px;
+    opacity: 0;
     transition: opacity .4s linear;
 }
-#overlay.is-visible {
+#content-controls.is-visible {
     opacity: 1;
     transition: opacity .4s linear;
 }
-#controls {
+
+#content-controls > div {
     display: flex;
-    justify-content: center;
-}
-#controlItem {
-    display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    border-radius: 5px;
-    border: 1px solid black;
-    width: max-content;
-}
-.controlBtn {
-    padding: 5px 10px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid #000;
 }
 
-#choices {
-    position: absolute;
+.control-button {
+    margin: 10px;
+    cursor: pointer;
+}
+
+#back-second {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#icon-back-second {
+    letter-spacing: -5px;
+    transform: translateX(-5px);
+}
+
+#game-settings-button {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    margin: 15px;
+    padding: 10px;
+    cursor: pointer;
+    border: 2px solid #000;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: none;
+    transition: box-shadow .6s ease-in-out;
+}
+
+#game-settings-button:hover {
+    box-shadow: inset 0px 0px 20px 1px rgba(0,0,0,0.6);
+    transition: box-shadow .6s ease-in-out;
+}
+
+#game-settings-button .fa-gear {
+    color: #FFF;
+    transform: rotate(0deg);
+    transition: transform .6s ease-in-out;
+}
+#game-settings-button:hover .fa-gear {
+    transform: rotate(180deg);
+    transition: transform .6s ease-in-out;
+}
+
+
+
+#content-game-settings {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 15;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+#content-game-settings > div {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+#content-game-settings .game-setting-button {
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background: none;
+    padding: 5px;
+    box-shadow: none;
+    transition: box-shadow .6s ease-in-out;
+}
+#content-game-settings .game-setting-button:hover {
+    box-shadow: inset 0px 0px 20px 1px rgba(0,0,0,0.6);
+    transition: box-shadow .6s ease-in-out;
+}
+#content-game-settings #close-button {
+    align-self: flex-end;
+}
+
+#content-choices {
+    position: fixed;
     bottom: 0;
     left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    z-index: 4;
     width: 100%;
-    background-color: white;
-}
-.choice {
-    height : 100px;
+    height: 15%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.choice-button {
     cursor: pointer;
-    border: 1px solid black;
-    border-left: 0;
-    text-decoration: none;
-    color: black;
-    transition: all .3s ease-in-out;
+    text-align: center;
+    font-size: 36px;
+    color: #fff;
+    background: none;
+    border: none;
+    flex: 1 1 auto;
+    padding: 10px;
+    height: 100%;
+    box-shadow: none;
+    transition: box-shadow .6s ease-in-out;
 }
-.choice:hover{
-    background-color: #dadada;
+.choice-button:hover {
+    box-shadow: inset 0px 0px 20px 1px rgba(0,0,0,0.75);
+    transition: box-shadow .6s ease-in-out;
 }
-.choice:last-child {
-    border-right: 0;
+
+#content-text {
+    padding: 20px;
+    text-align: justify;
+    background-color: #FFF;
+}
+
+#text-replace {
+    white-space: break-spaces;
+}
+
+#pause-play {
+    position: absolute;
+    z-index: 3;
+    width: 100vw;
+    height: 100vh;
+}
+
+#video {
+    z-index: 1;
+    width: 100%;
 }

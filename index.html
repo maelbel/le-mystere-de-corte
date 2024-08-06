@@ -4,18 +4,29 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8">
+<<<<<<< HEAD
+=======
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+>>>>>>> 7141aa8 (restart game)
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
     <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
     <title>Le Mystère de Corte</title>
     <!-- CSS -->
+<<<<<<< HEAD
     <link rel="stylesheet" href="./assets/css/bootstrap/bootstrap.css" type="text/css"/>
+=======
+    <link href="./assets/fontawesome/css/fontawesome.css" rel="stylesheet" />
+    <link href="./assets/fontawesome/css/brands.css" rel="stylesheet" />
+    <link href="./assets/fontawesome/css/solid.css" rel="stylesheet" />
+>>>>>>> 7141aa8 (restart game)
     <link rel="stylesheet" href="./assets/css/style.css" type="text/css"/>
   </head>
 
   <body>
     <audio id="music" src="./assets/musique/menu_music.wav" type="audio/wav" loop></audio>
     
+<<<<<<< HEAD
     <div id="interface">
       <div class="menu" id="mainMenu">
         <div class="mc-container">
@@ -127,15 +138,140 @@
         <div id="choices"></div>
       </div>
       <video type="video/mp4"></video>
+=======
+    <div class="menu" id="main-menu">
+      <div class="container" id="menu-container">
+        <h1>Le Mystère de Corte</h1>
+        <nav>
+          <button class="button" id="new-button" autofocus>Nouvelle partie</button>
+          <button class="button" id="load-button" disabled>Charger la partie</button>
+          <button class="button" id="settings-button">Options</button>
+          <button class="button" id="quit-button">Quitter</button>
+        </nav>
+        <div class="content-version">
+          Version <span id="version"></span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="menu" id="settings-menu">
+      <div class="container" id="settings-container">
+        <h1>Options</h1>
+        <div id="content-settings">
+            <div id="nav-settings">
+                <a id="audio" class="setting-button active">AUDIO</a>
+                <a id="window" class="setting-button">FENÊTRE</a>
+                <a id="shortcuts" class="setting-button">RACCOURCIS</a>
+                <a id="save" class="setting-button">SAUVEGARDE</a>
+            </div>
+            <hr>
+            <div class="content-items" id="audio-settings">
+              <div class="item">
+                <div class="label">Musique</div>
+                <div class="input">
+                  <input type="range" id="music-volume" name="music-volume" 
+                    value="100" min="0" max="100" step="1">
+                </div>
+                <div class="value" id="music-percent"></div>
+              </div>
+              <div class="item">
+                  <div class="label">Vidéo</div>
+                  <div class="input">
+                      <input type="range" id="video-volume" name="video-volume" 
+                      min="0" max="100" step="1">
+                  </div>
+                  <div class="value" id="video-percent"></div>
+              </div>
+            </div>
+            <div class="content-items" id="window-settings">
+              <div class="item">
+                <div class="label">Mode d'affichage</div>
+                <select class="input" id="print-mode">
+                  <option value="1">Plein écran</option>
+                  <option value="2">Plein écran fenêtré</option>
+                  <option value="3">fenêtré</option>
+                </select>
+                <div class="value"><div class="button" id="apply-print-mode-button">Appliquer</div></div>
+              </div>
+              <div class="item">
+                <div class="label">Résolution</div>
+                <select class="input" id="resolution">
+                  <option value="1">3840x2160</option>
+                  <option value="2">2560x1600</option>
+                  <option value="3">1920x1200</option>
+                  <option value="4">1920x1080</option>
+                  <option value="5">1600x900</option>
+                  <option value="6">1280x720</option>
+                  <option value="7">800x600</option>
+                </select>
+                <div class="value"><div class="button" id="apply-resolution-button">Appliquer</div></div>
+              </div>
+            </div>
+            <div class="content-items" id="shortcuts-settings">
+              <div class="item">
+                <div class="label">FullScreen</div>
+                <div></div>
+                <div class="value">F11</div>
+              </div>
+              <div class="item">
+                <div class="label">Lancer/arrêter la vidéo</div>
+                <div></div>
+                <div class="value">Espace</div>
+              </div>
+            </div>
+            <div class="content-items" id="save-settings">
+              <div class="item">
+                <div class="label">Dernière sauvegarde</div>
+                <div></div>
+                <div class="value" id="last-save"></div>
+              </div>
+            </div>
+          </div>
+          <div class="content-button">
+            <div class="button" id="back-menu">Retour</div>
+            <div class="button" id="save-settings-button">Sauvegarder</div>
+          </div>
+      </div>
+    </div>
+
+    <div class="menu "id="game-menu">
+      <div id="content-controls">
+          <div>
+              <div class="control-button" id="back-button" title="Scène précédente">◄</div>
+              <div class="control-button" id="back-second" title="5sec en arrière"><span id="icon-back-second">◄◄</span></div>
+              <div class="control-button" id="next-choice" title="Scène suivante">►</div>
+          </div>
+      </div>
+      <div id="game-settings-button"><i class="fa-solid fa-gear"></i></div>
+      <div id="content-game-settings">
+        <div>
+          <button class="game-setting-button" id="close-button"><i class="fa-solid fa-circle-xmark"></i></button>
+          <button class="game-setting-button" id="save-button">Sauvegarder et quitter</button>
+        </div>
+      </div>
+      <div id="content-choices">
+          <!-- Le contenu sera généré dynamiquement -->
+      </div>
+      <div id="content-text"></div>
+      <div id="content-video">
+        <div id="pause-play"></div>
+        <video id="video" src=""></video>
+      </div>
+>>>>>>> 7141aa8 (restart game)
     </div>
     
     
     <!-- Vous pouvez également requérir que d’autres fichiers s’exécutent dans ce processus -->
     <script type="text/javascript" src="./assets/js/jquery-3.6.3.js"></script>
     <script type="text/javascript" src="./renderer.js"></script>
+<<<<<<< HEAD
     <script type="text/javascript" src="./assets/data/choices.js"></script>
     <script type="text/javascript" src="./models/choix.js"></script>
     <script type="text/javascript" src="./models/video.js"></script>
     <script type="text/javascript" src="./assets/js/index.js"></script>
+=======
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script> -->
+    <!-- <script type="text/javascript" src="./assets/js/index.js"></script> -->
+>>>>>>> 7141aa8 (restart game)
   </body>
 </html>

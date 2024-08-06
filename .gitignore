@@ -1,12 +1,6 @@
 node_modules
 out
-assets/css/bootstrap
-assets/data
-assets/fonts
+assets/fontawesome
 assets/images
 assets/musique
 assets/videos
-package.json
-package-lock.json
-settings.json
-window.json

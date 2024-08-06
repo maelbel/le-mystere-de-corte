@@ -1,0 +1,336 @@
+{
+    "intro": {
+        "text": "1. INT - APPARTEMENT DE MATTEU - JOUR<br/>Matteu est arrivé dans son nouvel appartement. Il reçoit un appel de sa mère lorsqu’il rentre des courses.<br/><br/>Matteu (sourire forcé)<br/>« Ah salut maman. »<br/><br/>Mère <br/>« Alors mon petit lapin ? Prêt pour la rentrée ? » <br/><br/>Matteu<br/>« Oui. »<br/><br/>Mère<br/>« Tu as tout ce dont tu as besoin dans ton nouveau studio ? »<br/><br/>Quelques secondes s’écoulent.<br/><br/>Matteu<br/>« Bisous Maman. » <br/>(raccroche)<br/><br/>Matteu prépare son sac et mange. Lorsqu’il est prêt, il sort de l’appartement.<br/><br/>2. INT - IUT DE CORTE - JOUR<br/><br/>Matteu arrive à L’IUT, il rentre et se dirige vers le couloir. Matteu  regarde les panneaux.<br/>Un étudiant viens le voir et l’aborde :<br/><br/>Aurèle<br/>« Salut ! Tu t’appelles comment ? »<br/><br/>Matteu <br/>« C’est Matteu et toi ? »<br/><br/><br/>Aurèle<br/>« Je me présente. Moi c’est Aurèle Véron-Guaitella. »<br/><br/>Aurèle tend sa main.",
+        "video": "./assets/videos/Intro.mp4",
+        "choices": {
+            "serrer la main": "Serrer la main",
+            "ne pas serrer la main": "Ne pas serrer la main"
+        }
+    },
+    "serrer la main": {
+        "text": "Aurèle lui propose de lui présenter l’IUT. Il lui présente la machine à café, étonnamment un café est déjà prêt à l’emploi. Matteu le boit sans se soucier de quoi que ce soit. Ils vont en cours. <br/> <br/>Ellipse <br/>Matteu et Aurèle ressortent des cours. Vers un endroit ils doivent se séparer car ils habitent à des endroits différents et doivent donc prendre des chemins différents. <br/> <br/>Aurèle <br/>« À la revoyure ! » <br/> <br/>Matteu <br/>« Hein ? Ouais à demain. » <br/>5. EXT - RUE DE CORTE - NUIT <br/> <br/>Ellipse <br/>Matteu sort se promener la nuit pour oublier ses problèmes. En arrivant vers une rue peu éclairée il entend du bruit et soudain un homme capuchonné se dresse devant lui. Ils restent immobiles pendant quelques secondes puis l’homme capuchonné court vers Matteu, armé d’un couteau. <br/>Matteu court le plus vite possible et arrive à l’hôtel quelques minutes plus tard. Il est essoufflé et se couche la lumière allumée. <br/> <br/>6. EXT - IUT DE CORTE - JOUR <br/>Si Matteu est devenu ami avec Aurèle <br/>Ellipse <br/>Le lendemain Aurèle offre un café à Matteu et ce dernier lui parle de ce qui lui est arrivé. Aurèle réagit de manière très exagérée. <br/> <br/>Aurèle <br/>« QUOI ! Non mais c’est dingue ! Je te conseille de prendre des vitamines ! » <br/> <br/>Matteu <br/>« Mais je devrais pas plutôt appeler la police ? » <br/> <br/>Aurèle <br/>« NON ! PREND DES VITAMINES ! Pour courir plus vite ! Il pourra plus te chopper ce fou ! » <br/> <br/>Matteu <br/>« T’as raison. Je vais faire ça. » <br/> <br/>7. EXT - IUT DE CORTE - JOUR <br/> <br/>Ellipse <br/>Matteu et Aurèle sortent de l’IUT. <br/> <br/> <br/>Aurèle <br/>« N’empêche c’était vachement intéressant les chiffres 0 et 1 dans le code binaire. » <br/> <br/>Matteu <br/>« Ah ouais tu trouves ? Je t’avoue que j’ai pas trouvé ça vachement intéressant. » <br/> <br/>Ellipse le soir",
+        "video": "",
+        "choices": {
+            "se promener": "Se promener",
+            "ne pas se promener": "Ne pas se promener"
+        }
+    },
+    "se promener": {
+        "text": "Matteu sort dehors, en regardant autour de lui avec attention, et prêt à sprinter à la moindre chose suspecte. Il revoit l’homme capuchonné. L’homme se met à courir mais se mange sur le sol. Matteu court et rentre chez lui. \n \n10. EXT - IUT DE CORTE – JOUR \n \nEllipse \nLe lendemain, Matteu retourne à l’IUT et parle à Aurèle. Ce dernier lui offre encore un café. \n \nSi Matteu est parti se promener \n \nMatteu \n« Il m’a réattaqué, mais il s’est mangé sur le sol. » \n \nAurèle (inquiet) \n« Il a dû se faire mal putain... » \n \nMatteu \n« Non mais Aurèle t’es de quel côté-là ? T’es avec lui ou quoi ? » \n \nAurèle \n« Non c’est juste que... » \n \n \nMatteu \n« Tu te soucies d’un meurtrier ? C’est qui qui se fait planter dans l‘histoire espèce d’enfoiré ? » \n \nAurèle \n« Ah ouais t’as raison... » \n \n11. INT - HOTEL HR (ACCUEIL) - JOUR \n \nEllipse \nMatteu prend un café dans l’accueil de l’hôtel. Des pièces tombent par terre à la sortie de l’accueil, Matteu pose son café et va ramasser les pièces en vérifiant que personne ne le voit. Derrière son dos, Aurèle a versé de la poudre dans son café et part se cacher dans le couloir. \nQuelques secondes plus tard, une personne rentre à l’accueil et va vers Matteu. \n \nMael \n« Excuses-moi je peux parler d’un truc ? Je sais que ça peut paraître bizarre mais c’est vraiment important... » \n \nMatteu \n« Ok... vas-y. » \n \nMael \n« Alors voilà… Est-ce tu as été attaqué par un homme capuchonné ? » \n \nMatteu \n« Effectivement ça m’est arrivé, et toi ? » \n \nMael \n« Ça fait un mois, j’en peux plus. \n(se met à pleurer) \nAIDE-MOI ! » \n \nMatteu \n« Bah écoute, je sais que ça peut paraître un peu perturbant la première fois mais c’est une question d’habitude. » \n \nMael \n« MAIS AIDE-MOI il va finir par me buter !! » \n \nMatteu \n« Non mais monsieur ce n’est pas mon problème ! (boit son café en mode british avec les jambes croisées). Je n’ai pas que ça à faire, allez ça va aller, courage. Au revoir mon petit pote. » (Lui fait une tape sur l’épaule) \n \n \nMael (s’en va en pleurant) \n« C’EST PAS JUSTE ! » \n \n \n12. INT - HOTEL HR - JOUR \nMatteu retourne dans son studio mais sur le chemin tombe sur une peau de banane. ",
+        "video": "",
+        "choices": {
+            "ramasser la peau de banane": "Ramasser la peau de banane",
+            "ne pas ramasser la peau de banane": "Ne pas ramasser la peau de banane"
+        }
+    },
+    "ramasser la peau de banane": {
+        "text": "Il ramasse la peau de banane avec dégoût. \n \nMatteu \n« Pourquoi j’ai fait ça ? »",
+        "video": "",
+        "choices": {
+            "reposer la peau de banane": "Reposer la peau de banane",
+            "garder la peau de banane": "Garder la peau de banane"
+        }
+    },
+    "reposer la peau de banane": {
+        "text": "Matteu essaye mais n’y arrive pas. Il essaie de la jeter mais ça ne marche pas. Il la met dans sa poche. \n \n13. EXT - RUE DE CORTE - NUIT \n \nEllipse \nLe soir Matteu sort pour aller à la rencontre du meurtrier. Le meurtrier apparaît. \nMatteu lui lance la peau de banane. \n \nMeurtrier \n« T’as pas honte de jeter des déchets comme ça. Les gens comme toi on devrait les castrer » \nMatteu \n« C’est toi le déchet ! » \nLe meurtrier \n« Je suis pas un déchet, je suis employé à mi-temps au supermarché d’à côté » \nMatteu \n« Mais je m’en bat les couilles » \nLe meurtrier \n« Bon toi t’es mort » \nLe meurtrier pointe son couteau vers Matteu.",
+        "video": "",
+        "choices": {
+            "foncer sur lui": "Foncer sur lui",
+            "trouver une deuxième peau de banane": "Trouver une deuxième peau de banane",
+            "rentrer chez soi (bis)": "Rentrer chez soi"
+        }
+    },
+    "foncer sur lui": {
+        "text": "Matteu court vers lui. Le meurtrier tend son bras au dernier moment et le plante. \nMatteu chuchote « J’ai un gilet par balle » \n« Bah tu vas quand même crever mec » \n« Non » (doute) \nÉCHEC",
+        "video": ""
+    },
+    "trouver une deuxième peau de banane": {
+        "text": "Matteu cherche une peau de banane. \n \nMatteu \n « J’AI TROUVÉ !! » \n \nLe meurtrier sautille en arrivant par derrière et plante Matteu dans le dos. \nÉCHEC ",
+        "video": ""
+    },
+    "rentrer chez soi (bis)": {
+        "text": "Matteu rentre à pied sans regarder derrière lui. Le meurtrier est toujours derrière lui en train de sprinter pour le rattraper mais tombe à chaque fois. À la fin le meurtrier n’en peut plus et rampe en essayant de rouler mais s’épuise. \n \n15. EXT - IUT DE CORTE - JOUR \n \nEllipse \nLe lendemain Matteu raconte à Aurèle ce qu’il s’est passé. \n \nMatteu \n« Tu crois qu’il va m’attaquer toute ma vie ? » \n \nAurèle \n« Non, je pense qu’il se repose ce soir, en plus y a Koh-Lanta à 21h. » \n \nMatteu \n« Tu le connais ? » \n \nAurèle \n« Euh… » \n \nMatteu \n« Réponds ! » \n \nAurèle \n« Oui... » \n \nMatteu \n« Comment ça ? Mais t'es son complice ! » \n \nAurèle \n« Non pas du… » \n \nMatteu \n« Espèce de traître !! » \n \nAurèle \n« Mais non je peux tout t’expliquer… » \n \nMatteu reçoit soudain un coup sur la tête et perd conscience. \n \n22. INT - GARAGE DE MAEL - JOUR \n \nMatteu se réveille sur une chaise. Il voit quelqu’un sur une chaise de dos. \nSon siège se tourne vers Matteu. \n \nLe chef \n« Bonjour Matteu. » \n \nMatteu (rigole) \n« Eh t’es marrant comme mec toi. » \n \nLe chef \n« Arrête ! » \n \nMatteu \n« Bon, vous êtes qui ? Pourquoi vous m’avez amené ici ? » \n \nLe chef \n« Es-tu aveugle ? » \n \nMatteu \n« De ce que je sais, non » \nMatteu regarde autour quelques secondes. \n \nLe chef (Rire de mafieux) \n« Que tu es naïf ! » \n(S’arrête puis reprend un instant après) \n« N’as-tu rien remarqué de bizarre depuis que tu es arrivé à Corte ? » \n \nMatteu \n« AUCUNE POUBELLE DE TRI SELECTIF ! C’EST INADMISSIBLE » \n \nLe chef \n« Toutes tes réactions sont absurdes, réfléchis. » \n \nMatteu (prends quelques secondes pour réfléchir) \n« Mais non… Comment ça se fait ? » \n \nLe chef \n« Je gère depuis quelques années cette ville et fais-en sorte de rendre les gens cons pour pouvoir la contrôler. Pour cela j’utilise une poudre. La poudre abrutissante. » \n \nMatteu \n« Ah bon ? C’est vachement intéressant tout ça, je peux vous aider ? » \n \nLe chef \n« Tu es con. » \n \nMatteu \n« Oh c’est pas cool ça ! » \n \nLe chef \n« Mais laisse-moi te présenter mes collègues. » \n \nMael et Aurèle rentrent soudain dans la salle. Aurèle bave. \n \nMatteu (avec une tête ahurie) \n« Oh ! Mael et Aurèle ! Vous voilà ! Venez m’aider ! » \n \nAurèle (en bavant) \n« Mouuun » \n \nMatteu \n« Oh bah t’as changé Aurèle ! » \n \nMael \n« Ta gueule. » \n \nMatteu \n« Pourquoi tout le monde est méchant ! » \n \nLe chef \n« Tuez-le. » \n \nMatteu \n« Mais pourquoi me tuer ? Je suis gentil moi ! » \n \n \nMael \n« T’es gênant et t’es pas drôle » \n \nMatteu (Prenant un ton d’enquêteur) \n« J’ai pas assez d’informations, vous pouvez m’en dire plus ? » \n \nMael \n« Mais tu vas mourir t’es con ou quoi ? » \n \nMatteu (jette des regards à tout le monde) \n« Bah moi je crois pas les amis » \n \nMael se met derrière lui et lui met une cagoule.",
+        "video": "",
+        "choices": {
+            "parler de son enfance traumatisante pour les faire culpabiliser": "Parler de son enfance traumatisante pour les faire culpabiliser",
+            "les insulter": "Les insulter",
+            "faire une blague": "Faire une blague"
+        }
+    },
+    "parler de son enfance traumatisante pour les faire culpabiliser": {
+        "text": "Matteu (pleure) \n-Quand-quand j'étais pe-petit mes parents me-me donnaient pas de-de bonbons. \n \nLuc \n-Euuh ? \n \nMatteu (éclate en pleurs) \n-Je me faisais insulter de nain par mes camarades ! \n \nLuc \n-Mais... \n \nMael \n-Bon ta gueule on s'en fout \n \nMatteu \n-Je veux quitter ce monde. Tuez-moi. \n \nLuc \n-Donc là t'es en train de te servir de nous c'est ça ??! T'AS PAS LES COUILLES POUR TE SUICIDER ?? \n \nMael \n-Luc arrête tu vois pas qu'il utilise la psycologie inversée pour qu'on le libère ! \n \nLuc (s'addrese à Mael) \n-DE QUOI TU PARLES TOI ? C'EST MOI QUI COMMANDE ICI ! \n \nLuc (s'adresse à Matteu) \n- ECOUTE MOI BIEN TOI ! ON VA T'ENFERMER DANS UNE CAVE ET ON T'INSULTERA DE NAIN AUTANT DE FOIS QU'ON LE VEUT HAHAHA \n \nMatteu \n-Nooooo s'il vous plaît tuez-moi me faites pas subir ça !! \n \nAurèle \n-Moouun \n \nMael \n-Luc t'es vraiment con !!! \n \nLuc \n-Excuses-moi mais c'est qui le chef ici ? \n \nMael \n-Ca devrait pas être toi t'as perdu ton cerveau quand t'étais petit. \n \nLuc \n-Bah tu sais quoi ? Tu vas rejoindre Matteu dans la cave. \n \nLuc fout un coup de poing à Mael et celui tombe par terre inconscient. \n \nLuc (réfléchit) \n-Hum... Ca te dirait de remplacer Mael ? C'est une chance que je te donne. ON POURRA DOMINER LA VILLE !",
+        "video": "",
+        "choices": {
+            "accepter": "Accepter",
+            "refuser": "Refuser"
+        }
+    },
+    "accepter": {
+        "text": "Matteu \n-Ah ouai c'est vachement cool tout ça, bah du coup j'accepte \n \nAurèle \n-Mouuun \n \nMatteu \n-Il est shooté ou quoi lui ? \n \nAurèle \n-overdooose pouudre abruttisssante \n \nLuc \n-Oui mais il est habitué \n \nLuc prend le corps de Mael et le fout dans la cave. \n \nLuc détache Matteu. \n \nLuc \n-Je te préviens, tu bouges pas. \n \nMatteu \n-Mais bien sûr t'inquiètes pas \n \nLuc prend Aurèle par le col. \n \nLuc \n-Pour prouver que tu es de mon côté tu dois buter Aurèle, là, maintenant.",
+        "video": "",
+        "choices": {
+            "buter aurèle": "Buter Aurèle",
+            "s'enfuir": "S'enfuir",
+            "refuser et faire la morale":"Refuser et faire la morale"
+        }
+    },
+    "buter aurèle": {
+        "text": "Matteu a les mains qui tremblent. Il appuie sur la gachette et tire dans la tête d'Aurèle. Il éclate en pleurs. \n \nLuc \n-Eh bah voilà, t'as réussi. Bienvenue dans l'équipe. T'as fait du bon boulot. Descends avec moi dans la cave. \n \nMatteu est désormais dans la cave, le flingue pointé sur la tête de Mael. Matteu tremble mais sourit en même temps. Comme s'il était devenu fou. Matteu tire. Mael est mort et Matteu rigole. \n \nMatteu \n-AAARRHAAARHHAHA JE ME SENS TELLEMENT BIEN QUAND JE TUE C'EST UNE SENSATION QUE J'AIE JAMAIS EUE \n \nMatteu se calme. Il se rend compte de la situation. Il pointe le flingue sur Luc. \n \nLuc \n-OHO FAIS PAS CA ! \n \nMatteu \n-Adieu \n \nMatteu bute Luc. \n \nMatteu \n-Putain j'ai buté trois personnes dans la même journée c'est horrible. \nBah peut-être que je peux en buter une quatrième. \n \nMatteu se met une balle dans la tête. \n \nECHEC(c'est le pire choix que vous ayez fait)",
+        "video": ""
+    },
+    "s'enfuir": {
+        "text": "Matteu s'enfuit. \n \nLuc \n-Bon eh bah je bute Aurèle \n \nBRUIT DE COUP DE FEU \n \nECHEC \nAurèle est mort",
+        "video": ""
+    },
+    "refuser et faire la morale": {
+        "text": "Matteu \n-C'est hors de question. Non mais ils t'ont élevé comment tes parents ? T'as été battu ? T'as été renié ? Tes parent sont violents ? \n \nLuc \n-TA GUEULE \n \nMatteu \n-Non mais c'est n'importe quoi on bute pas quequ'un comme ça. Tu vas aller en prison sinon tu sais ? \n \nLuc \n-MAIS PERSONNE LE SAURA ILS SONT TOUS DEVENUS CONS DANS CETTE VILLE ! \n \nMatteu \n-Bon aller, dis-moi ce qu'ils t'ont fait tes parents. Tu as un carnet et un stylo ? \n \nLuc (confus) \n-Euh oui je vais te chercher ça \n \nMatteu \n-C'est bien aller courage \n \nLuc va chercher un carnet et un stylo. \n \nMatteu \n-Je m'installe sur ton canapé assis-toi sur la chaise. \n \nLa scène ressemble fortement à un psychologue qui aide un patient. Matteu ayant le rôle du psychologue. \n \nMatteu \n-Bon alors ils t'ont fait quoi ces fils de chiens ? \n \nLuc \n-ILS M'ONT PAS LAISSE UN CENTIME D'HERITAGE APRES LEUR MORT ! \n \nMatteu \n-Ils sont morts de quoi ? \n \nLuc \n-De moi \n \nMatteu \n-Comment ça ? \n \nLuc \n-Je voulais du pognon du coup je les ai buté pour avoir leur héritage. Le problème c'est qu'ils ont tout donné à la mairie de Corte pour les aménagments et toutes ces conneries. Ces putains d'altruistes !!! \n \nMatteu (réfléchis) \n-OOOH MAIS T'ES MALIN TOI. Donc t'envahi la ville et rend tout le monde con pour récupérer l'argent de la mairie. Mais tu sais que ça va pas marcher ? \n \nLuc \n-Comment ça ? Quoi ? \n \nMatteu \n-Bah ouai ça marche pas comme ça la ville. Fin de la session. On se voit tous les mardis et jeudis à 18h ça te va ? \n \nLuc \n-Oui \n \nMatteu \n-Aller aurevoir mon petit pote \n \nMatteu s'en va et prend Aurèle au passage. \n \nAurèle \n-Dooouuum \n \nEllipse 2 semaines plus tard \n \nLuc sourit aux gens et donne de l'argent aux SDF qu'il croise. Il va au tribunal et se voit attribuer une peine de 1 an et demi de prison pour les actes qu'il a commis. \nCARTON \nAprès sa sortie de prison Luc fera beaucoup de dons aux associations, conservera sa nouvelle amitié avec Matteu et se réconcielera avec Aurèle.",
+        "video": ""
+    },
+    "refuser": {
+        "text": "Matteu \n-C'est hors de question. Je veux pas être un connard comme toi. \n \nLuc \n-Mes parents me qualifiaient de gentil, altruiste, généreux et tu me traites de connard ? \n \nMatteu \n-Mais pourquoi t'utilises l'imparfait ? Ils ont crevé ? \n \nLuc (déstabilisé) \n-Euh euh non... \n \nMatteu (sourit) \n-Si si tu caches un truc là. Avoues. \n \nLuc (douteux) \n-Ils sont morts dans un accident de voiture. \n \nMatteu \n-Pourquoi t'as des doutes quand tu le dis ? Tu caches encore un truc ? C'est toi qui les a buté ? \n \nLuc (bugge quelques secondes) \n-MAIS COMMENT TU FAIS POUR SAVOIR PUTAIN !!! \n \nMatteu \n-Héhé \n \nLuc \n-Casse-toi d'ici et pars avec ton amant !! \n \nMatteu \n-Quel amant ? T'es homophobe c'est ça ? Tu vas avoir du mal à t'intégrer en société avec tous ces défauts. \n \nLuc (pointe du doigt Aurèle) \n-C'est lui ton amant ! \n \nMatteu \n-Bon bah moi et mon mari on s'en va alors. Aurèle dis aurevoir à Luc. \n \nAurèle \n-Mouuunnn \n \nMatteu et Aurèle s'en vont. Ils prennent le train ensemble et Aurèle lui explique la vérité sur la ville de Corte. \nCARTON \nAurèle et Matteu se marièrent et adoptèrent deux enfants qu'ils nommèrent Aurèle Junior et Matteu Junior. Ils vécurent heureux et se shootèrent tous les dimanches avec de la poudre abrutissante.",
+        "video": ""
+    },
+    "les insulter": {
+        "text": "Matteu \n-VOUS ETES DES FILS DE CHIENS JE VOUS BUTE \n \nMael \n-Hey comment tu parles !!! \n \nLuc \n-Enlève-lui la cagoule on change de plan \n \nMatteu \n-Comment ça ? \n \nLuc \n-Va chercher le briquet pendant que je vais me shooter avec de l'héroïne \n \nMael \n-Pas de soucis \n \nMatteu se retrouve désormais avec Aurèle \n \nMatteu \n-Et toi qu'est-ce qu'ils t'ont fait ??? \n \nAurèle \n-Mooouun \n \nMatteu \n-REPREND TON ESPRIT ! \n \nAurèle \n-pouuuudre abruutissante oveeerdooosee \n \nMatteu réfléchis. Mael arrive avec un briquet. Luc, shooté, le rejoint. \n \nLuc \n-Tu sais ce qu'il va t'arriver ? \n \nMatteu \n-Bah je vais probablement mourir \n \nLuc \n-On va te BRULER LA GORGE HAHA \n \nMatteu \n-AAAAAARRRH NON S'IL VOUS PLAIT \n \nMael s'approche avec la flamme du briquet",
+        "video": "",
+        "choices": {
+            "souffler sur la flamme": "Souffler sur la flamme",
+            "avaler le briquet": "Avaler le briquet",
+            "cracher sur mael": "Cracher sur Mael"
+        }
+    },
+    "souffler sur la flamme": {
+        "text": "Matteu souffle, souffle, souffle et resouffle. La flamme ne s'éteint jamais. \nMatteu s'évanoui d'hyperventilation. \n \nMael (tenant le briquet) \n- Bon bah \n \nLuc \n-On attend qu'il se réveille c'est pas drôle sinon \n \nEllipse le lendemain \n \nMatteu se fait réveiller par Aurèle \n \nAurèle \n-Hey ! Ca va ? Ils dorment encore ! Faut qu'on en profite pour se tirer !Je te détache \n \nMatteu \n-Trop cool ! Mais comment t'as fait pour survivre à l'overdose ??? \n \nAurèle \n-Luc et Mael me droguent tout le temps. Je suis habitué. \n \nMatteu (inquiet) \n-Ah \n \nAurèle et Matteu s'enfuient. Il s'arrêtent à un banc et s'assoient. \n \nAurèle \n-Bon, il faut les buter. Ils ont voulu te tuer. \n \nMatteu \n-Oui mais comment ? \n \nAurèle (sourire malin) \n-On va d'abord chez moi se remplir le ventre de pizzas et après on s'introduit chez Luc pour empoisonner lui et Mael. J'ai un double pour entrer. \n \nMatteu \n-C'est une super idée \n \nEllipse\n\n31. INT - APPARTEMENT DE LUC - NUIT \n \nNos deux compères se dirigent chez Luc, entrent dans le bâtiment et arrivent devant la porte. \n \nAurèle \n« T’es prêt ? »",
+        "video": "",
+        "choices": {
+            "oui": "Oui",
+            "je le sens pas": "Je le sens pas"
+        }
+    },
+    "oui": {
+        "text": "Aurèle \n« Ok, je te couvre ! » \n \nMatteu regarde son manteau puis tourne son regard vers Aurèle. \n \nMatteu \n« J’suis déjà couvert ! » \n \nAurèle \n« Arrête tes conneries, la poudre abrutissante rend pas si con ! \nAller, passes devant ! » \n \nMatteu \n« Ok, j’y vais » \n \nMatteu réunit toutes ses forces et défonce la porte. Une fois à l’intérieur, il ne voit personne et se prend un coup derrière la nuque par Luc. Aurèle arrive à la rescousse et, armé d’un pistolet, enfonce son arme dans le ventre de Luc et tire quatre balles, tout en criant de rage. \nEllipse \nMatteu se réveille. \n \nMatteu \n« C’est passé trop vite, j’ai rien compris ! » \n \nAurèle \n« On change de plan, j’ai buté Luc et c’est pas joli joli ! » \n \nMatteu (étonné) \n« Je peux voir ?! » \n \nAurèle \n« Non, faut qu’on trouve Mael ! Faut pas le laisser s’en tirer ! Allez debout ! »",
+        "video": "",
+        "choices": {
+            "ok, on va buter cet enculé": "Ok, on va buter cet enculé",
+            "non, je vais me faire assommer, c’est sûr !": "Non, je vais me faire assommer, c’est sûr !"
+        }
+    },
+    "ok, on va buter cet enculé": {
+        "text": "Les deux étudiants rentrent dans la chambre. A la seconde où la porte est franchie, Aurèle se rend compte qu’il n’y a personne mais qu'il y a une bombe en plein milieu de la pièce. \n \nAurèle \n« NOOON ! » \n \nEcran noir BRUIT D'EXPLOSION \n \nECHEC (Vous êtes mort)",
+        "video": ""
+    },
+    "non, je vais me faire assommer, c’est sûr !": {
+        "text": "Aurèle \n« Comme tu veux, le héros dans l’histoire ce sera moi, pas toi ! » \n \nMatteu \n« ok » \n \nMatteu part et sort du bâtiment. \n \n33. EXT - APPARTEMENT DE LUC - NUIT \n \nEn allant dehors, il aperçoit Mael montant dans sa voiture. Il court vers ce dernier, se faufile derrière la voiture et prends par surprise le meurtrier en ouvrant la portière : \n \nMatteu \n« Sort. » \n \nMael sort de la voiture sans rien dire, comme un fragile. Matteu le gifle. \n \nMatteu \n« C’était toi le meurtrier depuis le début ! » \n \nMatteu s’approche de Mael en le fixant avec un regard noir : \n \nMatteu \n« Si là j’avais un couteau je te planterais et je te regarderais te vider de ton sang » \n \nMael \n« Ok » \n \nMatteu est étonné. Mael s’en fout totalement. \n \nMael \n« Il est où ton pote ? » \n \nMatteu \n« Il fouille chez Luc pour te trouver. Mais je vois que t’as pas eu assez de couilles pour rester ! » \n \nMael \n« C’est toi qu’à pas de couilles. Regarde tes jambes » \n \nMatteu regarde ses jambes et Mael lui fait une balayette. Celui-ci tombe par terre et voit Mael sprinter vers la rue. \n \nMatteu \n« REVIENS !! » \n \nUne course poursuite s'enclenche. \n \n34. EXT - RUE DE CORTE - NUIT",
+        "video": "",
+        "choices": {
+            "prendre le premier embranchement": "Prendre le premier embranchement",
+            "prendre le second embranchement": "Prendre le second embranchement"
+        }
+    },
+    "prendre le premier embranchement": {
+        "text": "Matteu le prend et court soudain très lentement, comme s’il était dans de la boue. Au bout d’un moment il n’arrive plus à avancer et ne bouge plus. \nPlan ensemble (de loin) avec Matteu qui crie (écho) : « PUTAIN !! » \nECHEC (Vous avez perdu Mael)",
+        "video": ""
+    },
+    "prendre le second embranchement": {
+        "text": "Matteu donne un dernier coup d’accélération et saute sur Mael. Mael pousse un cri. \n \nMael \n« ooohoo ! » \n \nMatteu se défoule sur Mael. On entend Mael pousser des petits cris de douleur.",
+        "video": "",
+        "choices": {
+            "tuer mael": "Tuer Mael",
+            "laisser en vie": "Laisser en vie"
+        }
+    },
+    "tuer mael": {
+        "text": "Matteu lève son pied, mais entend soudain une explosion. Il se retourne et voit que ça vient de l’immeuble où habite Luc. Mael retourne sa tête avec ses dents pleines de sang vers Matteu. \n \nMael (souriant) \n« Désolé pour ton pote » \n \nMatteu \n« Comment ça ?! De quoi tu parles ? » \n \nMael (souriant) \n« Bah dans la chambre il y avait une bombe. » \n \nMatteu, fou de rage, relève son pied et frappe brutalement la nuque du meurtrier (écran noir et bruit de nuque cassée). \n \n36. EXT - IUT DE CORTE - JOUR \n \nUne semaine plus tard. \n \nMatteu, sur le parking de l’I.U.T, regarde une photo d’Aurèle. \n \nMatteu \n« Il est partit si vite… » \n \nAurèle \n« Salut ! » \n \nMatteu \n« AURELE ?! Comment ça se fait que tu sois en vie ? » \n \nAurèle \n« Quand j’ai fouillé l’appartement, j’ai pas trouvé la chambre… Du coup je suis partit. Quand je suis sortit, j’ai vu des gens rentrer, je pensais que c’était des invités et je suis partit. \nEn sortant de l’immeuble j’ai entendu une explosion. Après je suis rentré chez moi j’ai pris une tisane et j’ai regardé les télétubbies. » \n \nMatteu regarde Aurèle avec admiration et étonnement. \nSoudain Aurèle balance un café brulant sur Matteu. \n \nMatteu \n« AAARRRHH MAIS ESPECE D’ENCULE !! » \n \nAurèle \n« Je t’avais dit de prendre tes vitamines ! » \n \nFin style Looney Tunes.",
+        "video": ""
+    },
+    "laisser en vie": {
+        "text": "Mael dit avant de partir : \n \nMael \n« Il y a quelque chose qui va exploser et tu sauras bientôt ce que c’est. » \n \nMatteu \n« Tu continues de jouer à l’enculé fils de pute » \n \nMatteu lui fout un coup de poing dans le nez. Mael s’en va en pleurant. \n \n38. EXT - IUT DE CORTE - JOUR \n \nUne semaine plus tard. \n \nMatteu, sur le parking de l’I.U.T, regarde une photo d’Aurèle. \n \nMatteu \n« Il est partit si vite… » \n \nAurèle \n« Salut ! » \n \nMatteu \n« AURELE ?! \nComment ça se fait que tu sois en vie ? » \n \nAurèle \n« Quand j’ai fouillé l’appartement, j’ai pas trouvé la chambre… Du coup je suis partit. Quand je suis sorti, j’ai vu des gens rentrer, je pensais que c’était des invités et je suis partit. \nEn sortant de l’immeuble j’ai entendu une explosion. Après je suis rentré chez moi j’ai pris une tisane et j’ai regardé les télétubbies. » \n \nMatteu regarde Aurèle avec admiration et étonnement. \n \nAurèle \n« Par contre, tu peux me dire pourquoi t’as laissé CE FILS DE PUTE EN VIE \nTU VIENS DE BRISER UNE AMITIE MATTEU ! » \n \n39. EXT - IUT DE CORTE - JOUR \n \nAurèle s’en va. \nMatteu ne fais rien pendant quelques secondes. \n \nMatteu \n« D’façon il me cassait les couilles avec ses blagues de merde. » \n \nMatteu sort du champ. Aurèle revient. \n \nAurèle \n« Mais non je rigole je l’ai retrouvé le soir même, je l’ai buté ce con ! j’lai buté ! Aller revient ! C’était une blague ! Mon petit pote !» \n \nMatteu revient. \n \nMatteu (souriant) \n« Ah putain tu changeras jamais » \n \nAurèle balance un café brulant sur Matteu. \n \nMatteu \n« AAARRRHH MAIS ESPECE D’ENCULE !! » \n \nAurèle \n« Je t’avais dit de prendre tes vitamines ! » \n \nFin style Looney Tunes.",
+        "video": ""
+    },
+    "je le sens pas": {
+        "text": "Aurèle \n« Quoi ?! Tu va pas perdre tes couilles maintenant ! » \n \nMatteu \n« Tu sais quoi ? Je crois que j’en ai jamais eu. » \n \nMatteu prends ses jambes à son cou et laisse Aurèle tout seul. Ce dernier enfonce la porte, malheureusement, Luc l’attendait derrière celle-ci. Notre joyeux compère se prend un coup sur la nuque et s’assoupit. \nMatteu attend le train sur la gare.",
+        "video": "",
+        "choices": {
+            "monter dans le train": "Monter dans le train",
+            "retourner aider aurèle": "Retourner aider Aurèle"
+        }
+    },
+    "monter dans le train": {
+        "text": "Matteu monte dans le train. \n \nQuant à Aurèle, il se réveille attaché à une chaise avec, devant lui, Luc et Mael, l’air satisfait. \n \nEllipse \nAurèle, inanimé, est jeté dans une poubelle. \n \nFIN",
+        "video": ""
+    },
+    "retourner aider aurèle": {
+        "text": "32. INT - APPARTEMENT DE LUC - NUIT \n \nAurèle se réveille attaché à une chaise avec, devant lui, Luc et Mael, l’air satisfait. \n \nSoudain quelqu'un toque. \n \nMatteu \n'Bonjour, c'est pour le rideau de douche' \n \nMael \n'Il se fout de ma gueule là ?' \n \nMael (parle plus fort) \n'Tu crois qu'on va gober ce que tu dis ?' \n \nMatteu \n'Oui parce qu'un certain Aurèle m'a appelé pour changer le rideau de douche.' \n \nLuc \n'C'est vrai ce qu'il dit Aurèle ?'\n \nAurèle \n'umumum' \n \nLuc \n'ARTICULE PUTAIN' \n \nMael \n'MAIS T'ES CON SA BOUCHE EST SCOTCHEE COMMENT TU VEUX QU'IL PARLE !!!' \n \nMael enlève scotch. \n \nAurèle \n'Oui j'ai commandé un rideau de douche avec des motifs de Oui Oui ça coutait pas cher c'était en promo sur Amazon' \n \nLuc va ouvrir la porte. Matteu est déguisé et on ne le reconnait pas. \n \nLuc \n'Je suis désolé faites pas attention au mec ligoté sur la chaise c'est un jeu de rôles' \n \nMatteu (rigole) \n'Et toi dans ce jeu tu joues quoi du coup ? le fils de pute ?' \n \nAurèle et Mael \n'POOOOOO' \n \nMatteu \n'Bon aller elle est où cette douche ?' \n \nLuc \n'Dans ton gros cul. Dégage de chez moi, tu parles pas comme ça au chef de la ville' \n \nMatteu \n'Plutôt chef de mon cul ouai' \n \nMatteu frappe Luc et Aurèle donne un coup de tête à Mael. Matteu regarde la table où se trouvent un couteau, un flingue et un bouchon. La table est un peu blanche (poudre).",
+        "video": "",
+        "choices": {
+            "prendre le bouchon": "Prendre le bouchon",
+            "lécher la table": "Lécher la table"
+        }
+    },
+    "prendre le bouchon": {
+        "text": "Matteu prend le bouchon. \n \nMatteu (s'adresse à la table) \n'Et pourquoi je peux pas prendre le flingue ou le couteau ?' \n \nLa table \n'T'as trop fumé mec'",
+        "video": "",
+        "choices": {
+            "prendre le couteau (bis)": "Prendre le couteau",
+            "prendre le flingue": "Prendre le flingue"
+        }
+    },
+    "prendre le couteau (bis)": {
+        "text": "Matteu prend le couteau et plante Luc. \n \nLuc \n'Qu'est-ce qui te fais dire que ce sont nous les méchants ?' \n \nMatteu \n'Vous puez la haine' \n \nLuc \n'Faux' \n \nMatteu \n'J'enfonce plus profondément le couteau, écoute tes sensations' \n \nLuc \n'AAAAAAAARRRRRRH ENCULE' \n \nLuc tombe par terre. \n \nMael (BUGGE) \n'Cool' \n \nMael tombe en pleurs, et Matteu et Aurèle le consolent. \n \nMatteu \n'Aller c'est pas grave vous avez passé plein de bons momments ensemble, faut pas l'oublier ça' \n \nAurèle \n'Oui je suis sûr qu'il va bien au paradis des enculés' \n \nMael continue de pleurer. \n \nMatteu (réféchis) \n'Euh tu sais des Luc, il y en a plein. Tu peux toujours en trouver un autre. \n \nMael \n'Vous parlez comme si c'était un vulgaire animal domestique' \n \nMatteu (souriant) \n'Mais c'est le cas mon petit pote. Aller t'en fait pas' \n \nAurèle pose une peau de banane sur la tête de Mael. \n \nAurèle \n'Ca va mieux ?' \n \nMael \n'Oui cette peau de banane me réconforte' \n \nMatteu \n'On veut se faire pardonner. Tu veux rejoindre Luc au paradis ?' \n \nMael \n'Non !!?' \n \nAurèle \n'Aller c'est parti' \n \nEcran noir et coup de feu \n \nQuelques jours plus tard \n \nMatteu \n'Je suis content que cette histoire soit finie !' \n \nAurèle \n'Moi aussi. Tu veux que je t'avoue un truc ?' \n \nMatteu (HYPER NAIF COMME UN ABRUTI) \n'Ouai vas-y !' \n \nAurèle \n'Si on les a buté c'est pour que ce soit moi le nouveau chef de la ville !' \n \nMatteu \n'Hahha t'es drôle toi !' \n \nAurèle (prend une voix plus grave que celle qu'il a d'habitude) \n'Je rigole pas gros con' \n \nMUSIQUE D'HORREUR \n \nMatteu \n'OOOH' \n \nFIN",
+        "video": ""
+    },
+    "prendre le flingue": {
+        "text": "Matteu prend le flingue et le tiens du mauvais sens. \n \nMatteu (regardant le flingue) \n'Comme ça ?' \n \nPAN \n \nVous vous êtes tiré une balle dans la tête. \nECHEC",
+        "video": ""
+    },
+    "lécher la table": {
+        "text": "Matteu lèche la table. \n \nMatteu \n'HUMMMMMMM OOOOOH JE ME SENS TROP BIEN' \n \nLuc, juste derrière, pendant que Matteu est dans son trip, prend de l'élan et frappe de toute ses forces Matteu avec une poêle. \n \nCARTON \nVous êtes dans le coma et Aurèle décidera de vous débrancher au bout de 2 ans car il n'a plus les sous pour continuer de payer l'hôpital. Vous avez été très con sur ce coup-là. \nECHEC",
+        "video": ""
+    },
+    "avaler le briquet": {
+        "text": "Matteu chope le briquet, le met dans la bouche et tente de l'avaler. \nMatteu s'étouffe. Luc et Mael le regardent en souriant. \n \nLuc \n-Mais quel abruti \n \nMael \n-J'espère que t'as ton ticket pour le paradis \n \nECHEC",
+        "video": ""
+    },
+    "cracher sur mael": {
+        "text": "Matteu crache sur Mael. Mael lui crache dessus en retour et aprroche Le briquet. \nOn voit la flamme s'approcher du cou de Matteu. Matteu pousse des cris de fillette. \n \nMatteu \n-AAAAAAAAH AAAAAAAH \n \nECRAN NOIR ET BRUITAGE FEU \nECHEC",
+        "video": ""
+    },
+    "faire une blague": {
+        "text": "Matteu \n-Hey les gars \n \nMael \n-Quoi ? \n \nMatteu \n-Quelle est la différence entre une pizza et et un légume ? \n \nLuc \n-Je sais pas \n \nMatteu \n-C'est évident ! Le légume est meilleur pour la santé. \n \nMael \n-C'est censé être drôle ? \n \nMatteu \n-Oui \n \nLuc \n-Bon aller ça suffit \n \nBRUIT DE TRONCONNEUSE \nECHEC",
+        "video": ""
+    },
+    "garder la peau de banane": {
+        "text": "Matteu met la peau de banane dans sa poche (tire une tronche avec dégoût). \n \nMatteu \n« Mais c’est dégueulasse pourquoi je fais ça ? » \n \n13. EXT - RUE DE CORTE - NUIT \n \nEllipse \nLe soir Matteu sort pour aller à la rencontre du meurtrier. Le meurtrier apparaît. \nMatteu lui lance la peau de banane. \n \nMeurtrier \n« T’as pas honte de jeter des déchets comme ça. Les gens comme toi on devrait les castrer » \nMatteu \n« C’est toi le déchet ! » \nLe meurtrier \n« Je suis pas un déchet, je suis employé à mi-temps au supermarché d’à côté » \nMatteu \n« Mais je m’en bat les couilles » \nLe meurtrier \n« Bon toi t’es mort » \nLe meurtrier pointe son couteau vers Matteu.",
+        "video": "",
+        "choices": {
+            "foncer sur lui": "Foncer sur lui",
+            "trouver une deuxième peau de banane": "Trouver une deuxième peau de banane",
+            "rentrer chez soi (bis)": "Rentrer chez soi"
+        }
+    },
+    "ne pas ramasser la peau de banane": {
+        "text": "Matteu rentre dans son studio sans aucun problème. \n \n13. EXT - RUE DE CORTE - NUIT \n \nEllipse \nLe soir Matteu sort pour aller à la rencontre du meurtrier. Le meurtrier apparaît. Matteu s’énerve. \n \nMatteu \n« JE VEUX PAS TE VOIR ! » \n \nMeurtrier (avec une petite voix) \n« Oui… d’accord... » \n \nMatteu rentre à pied et entend des pas derrière lui. Il voit le tueur qui cours après lui, il ne compte pas le laisser partir vivant. Matteu sprinte et rentre chez lui. \n \n15. EXT - IUT DE CORTE - JOUR \n \nEllipse \nLe lendemain Matteu raconte à Aurèle ce qu’il s’est passé. \n \nMatteu \n« Tu crois qu’il va m’attaquer toute ma vie ? » \n \nAurèle \n« Non, je pense qu’il se repose ce soir, en plus y a Koh-Lanta à 21h. » \n \nMatteu \n« Tu le connais ? » \n \nAurèle \n« Euh… » \n \nMatteu \n« Réponds ! » \n \nAurèle \n« Oui... » \n \nMatteu \n« Comment ça ? Mais t'es son complice ! » \n \nAurèle \n« Non pas du… » \n \nMatteu \n« Espèce de traître !! » \n \nAurèle \n« Mais non je peux tout t’expliquer… » \n \nMatteu \n-Alors vas-y ou je te bute. T'as pas trop le choix. \n \nAurèle \n« Le tueur qu'a essayé de te buter s’appelle Mael et c’est un gros enculé. Il bosse avec Luc, un malade mental qui s’est auto-proclamé chef de la ville. Il souhaite dominer la ville en droguant tout le monde avec de la poudre abrutissante. Lui et Mael vont bientôt voir que je te protège donc… on va les buter. » \n \nMatteu (enjoué) \n« Ah ouai là comme ça t’es sérieux ? » \n \nAurèle sourit. \nMatteu \n« Mais tu sais comment les buter ? » \n \nAurèle (sort son téléphone en montrant du poison, fier) \n« Avec du poisson. » \n \nMatteu \n« Euh tu veux dire du poison ? \n \nAurèle \n« Ouai c’est pareil » \n \nMatteu \n« Et comment on fait pour leur faire avaler ? » \n \nAurèle \n« Ils sont blindés de tune, moi aussi d’ailleurs, et on fait la fête chez Luc tous les soirs. C’est simple : On s’introduit chez eux puisque j’ai la clé, on met de la poudre dans leurs verres, et une fois qu’ils en auront pris, ils crèveront, ces enculés. » \n \nMatteu \n« Ah ouais ! Je suis chaud moi ! »\n\n31. INT - APPARTEMENT DE LUC - NUIT \n \nNos deux compères se dirigent chez Luc, entrent dans le bâtiment et arrivent devant la porte. \n \nAurèle \n« T’es prêt ? »",
+        "video": "",
+        "choices": {
+            "oui": "Oui",
+            "je le sens pas": "Je le sens pas"
+        }
+    },
+    "ne pas se promener": {
+        "text": "Matteu fait des recherches sur Google « Je me suis fait attaquer par quelqu’un la nuit » et trouve 80 résultats liés à la ville de Corte. Il trouve même des forums. \n« Les gars je suis sûr que c la même personne à chaque fois, les description matches toutes ». \nSoudain Matteu reçoit un message privé sur le forum : « Tu n’aurais jamais dû faire ces recherches. Je vais devoir te tuer. J’ai trouvé ton adresse grâce à un logiciel gratuit qui est très bien. je te le conseille d’ailleurs, il est vachement pratique. J’arrive dans quelques secondes, je suis à l’entrée de l’hôtel HR. » \nMatteu fait une crise de panique. Il ne sait pas quoi faire. Il vérifie que la porte est bien fermée. \nSoudain, quelqu’un toque. Matteu a très peur. Il entend : « Bonjour, c’est pour le rideau de douche ». Matteu est un peu soulagé mais a des doutes.",
+        "video": "",
+        "choices": {
+            "ouvrir la porte": "Ouvrir la porte",
+            "ne pas ouvrir la porte": "Ne pas ouvrir la porte"
+        }
+    },
+    "ouvrir la porte": {
+        "text": "Il ouvre la porte. Il voit l’homme capuchonné en même temps que celui-ci le plante. \nÉCHEC",
+        "video": ""
+    },
+    "ne pas ouvrir la porte": {
+        "text": "“Y a quelqu’un ? Allo ? Bon bah écoutez je reviendrai demain monsieur » \nMatteu souffle. \n \nEllipse le lendemain \n \n10. EXT - IUT DE CORTE – JOUR \n \nMatteu retourne à l’IUT et parle à Aurèle. Ce dernier lui offre encore un café. \n \nMatteu \n« Hier je suis resté chez moi et j’ai découvert des choses incroyables sur un forum » \n \nAurèle (inquiet) \n« Quoi ?» \n \nMatteu \n« Bah en fait le tueur qui me course serait le même pour plein de gens ici. Il doit avoir un planning précis je pense » \n \nAurèle \n« A quelle heure t’es parti de promener avant-hier ? » \n \n \nMatteu \n« Chais pas… 21h15 je crois » \n \nAurèle \n« Hum. Je verrai avec lui. » \n \nMatteu \n« Tu le connais ? » \n \nAurèle \n« Euh… » \n \nMatteu \n« Réponds ! » \n \nAurèle \n« Oui... » \n \nMatteu \n« Comment ça ? Mais t'es son complice ! » \n \nAurèle \n« Non pas du… » \n \nMatteu \n« Espèce de traître !! » \n \nAurèle \n« Mais non je peux tout t’expliquer… » \n \nMatteu \n-Alors vas-y ou je te bute. T'as pas trop le choix. \n \nAurèle \n« Le tueur qu'a essayé de te buter s’appelle Mael et c’est un gros enculé. Il bosse avec Luc, un malade mental qui s’est auto-proclamé chef de la ville. Il souhaite dominer la ville en droguant tout le monde avec de la poudre abrutissante. Lui et Mael vont bientôt voir que je te protège donc… on va les buter. » \n \nMatteu (enjoué) \n« Ah ouai là comme ça t’es sérieux ? » \n \nAurèle sourit. \nMatteu \n« Mais tu sais comment les buter ? » \n \nAurèle (sort son téléphone en montrant du poison, fier) \n« Avec du poisson. » \n \nMatteu \n« Euh tu veux dire du poison ? \n \nAurèle \n« Ouai c’est pareil » \n \nMatteu \n« Et comment on fait pour leur faire avaler ? » \n \nAurèle \n« Ils sont blindés de tune, moi aussi d’ailleurs, et on fait la fête chez Luc tous les soirs. C’est simple : On s’introduit chez eux puisque j’ai la clé, on met de la poudre dans leurs verres, et une fois qu’ils en auront pris, ils crèveront, ces enculés. » \n \nMatteu \n« Ah ouais ! Je suis chaud moi ! »\n\n31. INT - APPARTEMENT DE LUC - NUIT \n \nNos deux compères se dirigent chez Luc, entrent dans le bâtiment et arrivent devant la porte. \n \nAurèle \n« T’es prêt ? »",
+        "video": "",
+        "choices": {
+            "oui": "Oui",
+            "je le sens pas": "Je le sens pas"
+        }
+    },
+    "ne pas serrer la main": {
+        "text": "Matteu monte en cours. Aurèle le suit. Quand Matteu se retourne, il le voit encore, toujours la main tendue, attendant que Matteu lui serre la main. Matteu a peur d’Aurèle et essaie de le fuir. \n \nAurèle \n« Je veux te donner un coup de main ! » \n \nMatteu \n« Bah moi je veux pas ! » \n \nMatteu s’arrête et regarde Aurèle dans les yeux. \n \nMatteu \n« Tu veux que je serre la main ? » \n \nAurèle (content) \n« Oui ! » \n \nMatteu tend son bras mais ne serre pas la main d’Aurèle. Il donne une gifle à ce dernier. Aurèle est choqué. \n \nAurèle \n« Aie mais pourquoi ?! » \n \nMatteu ne dis rien et s’en va. Aurèle, énervé, plisse les yeux en voyant partir Matteu. \nEllipse \nMatteu sort de l’IUT seul, triste. Il jette un regard sur Aurèle qui offre un café à quelqu’un.",
+        "video": "",
+        "choices": {
+            "demander des excuses à aurèle": "Demander des excuses à Aurèle",
+            "rentrer chez soi": "Rentrer chez soi",
+            "aller le voir et le gifler": "Aller le voir et le gifler"
+        }
+    },
+    "demander des excuses à aurèle": {
+        "text": "Matteu vient voir Aurèle. \n \nMatteu \n« Salut, je voulais m’excuser pour tout à l’heure. J’ai frappé un peu fort. » \n \nAurèle \n« C’est à moi de m’excuser. Tiens, je t’offre un café » \n \nMatteu \n« Oh bah merci » \n \nMatteu le boit. Il regarde en face de lui et voit une personne baver. \n \nMatteu \n« Euh tout va bien ? » \n \nAurèle \n« Oui oui elle va bien, elle contemple le paysage » \n \nMatteu \n« Ah ok » \n \nOn voit Matteu et Aurèle de loin semblant discuter avec joie. Ils rentrent chacun chez eux. \nEllipse \nMatteu sort se promener la nuit pour oublier ses problèmes. En arrivant vers une rue peu éclairée il entend du bruit et soudain un homme capuchonné se dresse devant lui. Ils restent immobiles pendant quelques secondes puis l’homme capuchonné court vers Matteu, armé d’un couteau. \nMatteu court le plus vite possible et arrive à l’hôtel quelques minutes plus tard. Il est essoufflé et se couche la lumière allumée. \n \n6. EXT - IUT DE CORTE - JOUR \n \nEllipse \n \nLe lendemain Aurèle offre un café à Matteu et ce dernier lui parle de ce qui lui est arrivé. Aurèle réagit de manière très exagérée. \n \nAurèle \n« QUOI ! Non mais c’est dingue ! Je te conseille de prendre des vitamines ! » \n \nMatteu \n« Mais je devrais pas plutôt appeler la police ? » \n \nAurèle \n« NON ! PREND DES VITAMINES ! Pour courir plus vite ! Il pourra plus te chopper ce fou ! » \n \nMatteu \n« T’as raison. Je vais faire ça. » \n \n7. EXT - IUT DE CORTE - JOUR \n \nEllipse \nMatteu et Aurèle sortent de l’IUT. \n \nAurèle \n« N’empêche c’était vachement intéressant les chiffres 0 et 1 dans le code binaire. » \n \nMatteu \n« Ah ouais tu trouves ? Je t’avoue que j’ai pas trouvé ça vachement intéressant. » \n \nEllipse le soir",
+        "video": "",
+        "choices": {
+            "se promener": "Se promener",
+            "ne pas se promener": "Ne pas se promener"
+        }
+    },
+    "rentrer chez soi": {
+        "text": "Matteu rentre chez soi. Pas de musique et rue vide. Bruit de vent. Matteu a une expression blasée. \n \nEllipse \nMatteu sort se promener la nuit pour oublier ses problèmes. En arrivant vers une rue peu éclairée il entend du bruit et soudain un homme capuchonné se dresse devant lui. Ils restent immobiles pendant quelques secondes puis l’homme capuchonné court vers Matteu, armé d’un couteau. \nMatteu court le plus vite possible et arrive à l’hôtel quelques minutes plus tard. Il est essoufflé et se couche la lumière allumée. \n \nLe lendemain \nAurèle vient voir Matteu. \n \nMatteu \n« Qu’est-ce tu me veux encore toi ? Je te serrerai pas la main. » \n \nAurèle \n« J’aimerais juste qu’on apprenne à se connaître. » \n \nMatteu \n« Non » \n \nAurèle \n« Tu risques de te sentir seul sans ami tu sais ? » \n \nMatteu (commence à bouder) \n« Mais… j’ai peur que tu sois con » \n \nAurèle \n«Ah. Bah tant pis alors. » \n \nMatteu (pleure) \n«Je suis désolé. » \n \nEllipse le soir \nMatteu pleure toujours. Il n'arrive pas à trouver le sommeil. Il regarde des photos de chats pour se sentir mieux et s'endort tard. \nEllipse \nMatteu voit son réveil sonner. Il le coupe. Il se recouche. \nMatteu se réveille à 14h. \nMatteu sort dehors. Il part dans l’allée où se trouvait le tueur qui l’a coursé avant-hier. Il attend 6 heures. \nEllipse \nMusique de suspens \nMatteu voit quelqu’un arriver et se changer en tueur. Il filme la scène. Ce dernier ne voit Matteu qu’une fois changé en homme capuchonné. \n \nMatteu \n« OOOOOOOH » \n \nLe tueur \n« Merde » \n \nMatteu court rentrer chez lui. \n \nLe lendemain Matteu vient voir Aurèle. \n \nMatteu \n-Euh salut \n \nAurèle \n-Tu veux quoi toi l'enculé ? \n \nMatteu \n-Je voulais te demander de l'aide... \n \nAurèle \n-Je t'aiderai pas tu te comportes comme une ordure \n \nMatteu \n-Dans ce cas-là je n'ai plus trop le choix.",
+        "video": "",
+        "choices": {
+            "gifler": "Gifler"
+        }
+    },
+    "gifler": {
+        "text": "Matteu fout une gifle à Aurèle. \n \nAurèle \n« MAIS ESPECE D’ENCULE JE VAIS TE BUTER » \n \nAurèle sort un couteau de sa poche.",
+        "video": "",
+        "choices": {
+            "se laisser planter": "Se laisser planter",
+            "prendre le couteau": "Prendre le couteau",
+            "supplier aurèle": {
+                "text": "Supplier Aurèle",
+                "condition": "rentrer chez soi"
+            }
+        }
+    },
+    "se laisser planter": {
+        "text": "Aurèle \n”Bah... Tu te défends pas ?” \n \nMatteu \n”Bah non.” \n \nMatteu se laisse tuer sous les coups d’Aurèle. \n \nECHEC",
+        "video": ""
+    },
+    "prendre le couteau": {
+        "text": "Matteu saisit le couteau des mains d’Aurèle. \n \nAurèle \n”EH mais... NON !”",
+        "video": "",
+        "choices": {
+            "planter aurèle": "Planter Aurèle",
+            "tu peux m’expliquer pourquoi tu me fais chier ?": "Tu peux m’expliquer pourquoi tu me fais chier ?"
+        }
+    },
+    "planter aurèle": {
+        "text": "Aurèle meurt sous les coups de Matteu. \n \nECHEC",
+        "video": ""
+    },
+    "tu peux m’expliquer pourquoi tu me fais chier ?": {
+        "text": "Matteu \n“Tu peux m’expliquer pourquoi tu me fais chier ?” \n \nAurèle \n“Tu me donnes des gifles sans prévenir !” \n \nMatteu \n« Bah là, je vais t’en donner une. » \n \nMatteu gifle Aurèle. \n \nAurèle \n« Mais pourquoi tu me donnes des gifles ?! Moi, je voulais t’aider, depuis le début ! Bah tu sais quoi ? Je te dirai rien ! » \n \nMatteu \n« Non non je veux savoir moi ! » \n \nAurèle \n« Ok, tu veux savoir qui t’a coursé avec un couteau hier ? » \n \nMatteu \n« Oui ! » \n \nAurèle \n« Il s’appelle Mael et c’est un gros enculé. Il bosse avec Luc, un malade mental qui s’est auto-proclamé chef de la ville. Il souhaite dominer la ville en droguant tout le monde avec de la poudre abrutissante. Lui et Mael vont bientôt voir que je te protège donc… on va les buter. » \n \nMatteu (enjoué) \n« Ah ouai là comme ça t’es sérieux ? » \n \nAurèle sourit. \nMatteu \n« Mais tu sais comment les buter ? » \n \nAurèle (sort son téléphone en montrant du poison, fier) \n« Avec du poisson. » \n \nMatteu \n« Euh tu veux dire du poison ? \n \nAurèle \n« Ouai c’est pareil » \n \nMatteu \n« Et comment on fait pour leur faire avaler ? » \n \nAurèle \n« Ils sont blindés de tune, moi aussi d’ailleurs, et on fait la fête chez Luc tous les soirs. C’est simple : On s’introduit chez eux puisque j’ai la clé, on met de la poudre dans leurs verres, et une fois qu’ils en auront pris, ils crèveront, ces enculés. » \n \nMatteu \n« Ah ouais ! Je suis chaud moi ! »\n\n31. INT - APPARTEMENT DE LUC - NUIT \n \nNos deux compères se dirigent chez Luc, entrent dans le bâtiment et arrivent devant la porte. \n \nAurèle \n« T’es prêt ? »",
+        "video": "",
+        "choices": {
+            "oui": "Oui",
+            "je le sens pas": "Je le sens pas"
+        }
+    },
+    "supplier aurèle": {
+        "text": "Matteu \n“Non non non, attends ! Me bute pas !” \n \nAurèle gifle Matteu. \n \nAurèle \n« P’tit con » \n \nMatteu est désemparé. \n \nMatteu (crie en ayant une expression d'abruti) \n-JE SUIS DESOLE. PARDON. \n \nAurèle (effrayé et confus) \n \nMatteu recule sa tête pour prendre de l'élan. A ce moment là Aurèle regarde avec frayeur Matteu et celui-ci s'éclate la tête contre la table et tombe par terre. Aurèle est choqué. \n \nAurèle \n-AAAAAAAAA C'EST HORRIBLE Y A DU SANG PARTOUT !!! \n Matteu (agonisant, pleurant avec une voix tremblante) \n-T'inquiète je vais bien \n \nAurèle \n-J'APPELLE L'AMBULANCE !! \n \nMatteu \n-Non laisse moi c'est trop tard \n \nMatteu meurt dans l'ambulance. Aurèle, de son côté, chiale comme jamais. \n \nVOUS ETES MORT \nECHEC",
+        "video": ""
+    },
+    "aller le voir et le gifler": {
+        "text": "Matteu arrive en face d’Aurèle. Il le regarde. \n \nAurèle \n« Euh oui ? » \n \nMatteu attend 2 secondes et gifle violemment Aurèle. \n \nAurèle \n« C’EST QUOI TON PROBLEME ? » \n \nAurèle se venge en donnant une gifle méga puissante à Matteu. Matteu est éjecté au sol. \nMatteu se relève mais se fait remettre à terre par Aurèle. La scène se répète d’abord 3 fois d’affilée. Puis la scène se répète tant que le joueur que ne clique pas sur Aurèle. Matteu, effrayé, décide de pousser Aurèle, court et rentre chez lui. \n \nEllipse \nMatteu sort se promener la nuit pour oublier ses problèmes. En arrivant vers une rue peu éclairée il entend du bruit et soudain un homme capuchonné se dresse devant lui. Ils restent immobiles pendant quelques secondes puis l’homme capuchonné court vers Matteu, armé d’un couteau. \nMatteu court le plus vite possible et arrive à l’hôtel quelques minutes plus tard. Il est essoufflé et se couche la lumière allumée. \n \nLe lendemain \n \nAurèle vient voir Matteu. \n \nAurèle \n« Salut, je voulais m’excuser pour hier. Je t’ai pas laissé te relever. »",
+        "video": "",
+        "choices": {
+            "gifler": "Gifler",
+            "va te faire foutre": "Va te faire foutre",
+            "moi aussi, je suis désolé pour la gifle d’hier. on repart à zéro ?":"Moi aussi, je suis désolé pour la gifle d’hier. On repart à zéro ?"
+        }
+    },
+    "va te faire foutre": {
+        "text": "Aurèle \n« Ok mon petit pote » \n \nMatteu \n« Chuis pas ton pote » \n \nAurèle \n« Tu le regretteras » \n \nAurèle s’en va. \nMatteu rentre chez lui et sent qu'il s'est mal comporté. Il commence à culpabiliser. Il se demande s'il va se promener ou pas.",
+        "video": "",
+        "choices": {
+            "se promener (bis)": "Se promener",
+            "ne pas se promener (bis)": "Ne pas se promener"
+        }
+    },
+    "se promener (bis)": {
+        "text": "Matteu sort dehors, en regardant autour de lui avec attention, et prêt à sprinter à la moindre chose suspecte. Il revoit l’homme capuchonné. Aurèle le chope par derrière. Aurèle lui tient les bras derrière son dos, et Matteu crie voyant le meurtrier s’approcher lentement avec son couteau. \nECRAN NOIR, CRIS ET COUP DE COUTEAU \nECHEC",
+        "video": ""
+    },
+    "ne pas se promener (bis)": {
+        "text": "Matteu culpabilise de plus en plus. Il n'arrive pas à trouver le sommeil. Il se donne une gifle. \nMatteu voit son réveil sonner. Il le coupe. Il se recouche. \nMatteu se réveille à 14h. \nMatteu sort dehors. Il part dans l’allée où se trouvait le tueur qui l’a coursé avant-hier. Il attend 6 heures. \nEllipse \nMusique de suspens \nMatteu voit quelqu’un arriver et se changer en tueur. Il filme la scène. Ce dernier ne voit Matteu qu’une fois changé en homme capuchonné. \n \nMatteu \n« OOOOOOOH » \n \nLe tueur \n« Merde » \n \nMatteu \n-Comment tu t'appelles ? \n \nLe tueur \n-Moi c'est Mael. Enchanté. \n \nMatteu \n-C'est toi qui veut me buter ? \n \nLe tueur (Mael) \n-Non \n \nMatteu \n-Ah vous êtes plusieurs à buter des gens ici ? \n \nLe tueur (Mael) \n-Euh... ouai ouai c'est ça. On est une secte. Et euh... on attend les gens dans des ruelles pour les buter. \n \nMatteu \n-Bah moi je trouve pas ça très orignal. Vous pourriez être un peu plus créatif quand même. C'est quoi votre budget ? \n(se met à chuchoter) - je peux vous financer \n \nMael \n-Non ça m'intéresse pas. Tu peux pas faire partie de la secte parce que t'es la cible. T'es LA victime dans tout ça. \n \nMatteu \n-On fait quoi du coup ? On peut négocier ? \n \nMael \n-Bah je te bute. \n \nMatteu \n-Ok \n \nMatteu court à fond. Mael le poursuit mais il court bien évidemment moins vite. Matteu croise Aurèle qui est en train de ramasser une banane et la met dans sa poche. \n \nMatteu (essouflé) \n- C'est dégueulasse pourquoi tu fais ça ? \n \nAurèle \n-Je sais pas j'ai l'impression que pas mal de gens le font dans cette ville. C'est comme ci... \n \nMatteu \n-Bon ta gueule y a un tueur qui me poursuit on va pas éterniser c'est discussion. \n \nAurèle \n-OH PUTAIN ! SUIS-MOI ! \n \nAurèle l'emmène dans la chambre d'hôtel de Matteu. Aurèle ouvre la porte avec un double. \n \nMatteu \n-Mais espèce enculé t'as ma clé tu peux rentrer chez moi ! \n \nAurèle \n-Bah oui des fois j'ai envie de grignoter du coup je passe chez toi te prendre un kinder buenos. \n \nMatteu \n-C'est toi l'enculé qui pique mes kinder bueno ? Tu t'es cru dans une pub ou quoi ? \n \nAurèle \n-Non je me suis pris un baiochi. Et j'ai aussi pris des billets de train à cause d'une facilité scénaristique. \n \nMatteu \n-Quelle facilité scénaristique ? \n \nAurèle \n-Aller viens on a pas le temps. \n \nMatteu et Aurèle sont dans le train et celui-ci démarre. \n \nCARTON : Matteu ne saura jamais ce qui clochait dans la ville de Corte. \n \nFIN",
+        "video": ""
+    },
+    "moi aussi, je suis désolé pour la gifle d’hier. on repart à zéro ?": {
+        "text": "Aurèle \n« Non » \n \nMatteu \n« Comment ça ? » \n \nAurèle \n« Je déconne ! Aller vient on a cours » \n \nMatteu est toujours gêné par l’humour d’Aurèle. \n \nEllipse \nMatteu et Aurèle sortent de l’IUT. \n \nAurèle \n« N’empêche c’était vachement intéressant les chiffres 0 et 1 dans le code binaire. » \n \nMatteu \n« Ah ouais tu trouves ? Je t’avoue que j’ai pas trouvé ça vachement intéressant. » \n \nEllipse le soir",
+        "video": "",
+        "choices": {
+            "se promener": "Se promener",
+            "ne pas se promener": "Ne pas se promener"
+        }
+    }
+}
