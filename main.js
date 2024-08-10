@@ -4,6 +4,7 @@ const fs = require('fs');
 
 // On récupère la valeur dans le json
 const windowJSON = require("./window.json");
+const savePath = path.join(app.getPath('userData'), 'savegame.json');
 
 let mainWindow;
 let loaderWindow;
@@ -54,10 +55,7 @@ function createMainWindow () {
 
   mainWindow.webContents.on('did-finish-load', () => {
     setTimeout(() => {
-      if (loaderWindow) {
-          loaderWindow.close();
-          loaderWindow = null;
-      }
+      closeLoader();
       mainWindow.show();
     }, 2000); // 2 secondes de délai
   });
@@ -78,64 +76,59 @@ app.on('ready', () => {
 //MENU
 ipcMain.on('show-loader', () => {
   if (!loaderWindow) {
-      createLoaderWindow();
+    createLoaderWindow();
   }
 });
 
 ipcMain.on('new-game-state', () => {
-  if (loaderWindow) {
-      loaderWindow.close();
-      loaderWindow = null;
-  }
-  newGameState();
-});
+  closeLoader();
 
-ipcMain.on('load-game-state', () => {
-  if (loaderWindow) {
-      loaderWindow.close();
-      loaderWindow = null;
-  }
-  loadGameState();
-});
-
-ipcMain.on('save-game-state', (event, state) => {
-  saveGameState(state);
-});
-
-ipcMain.on('quit-game', () => {
-  app.quit();
-});
-
-function newGameState() {
   // Initialise l'état du jeu avec le premier noeud du JSON
   gameState = {
-      currentNode: 'intro',
-      history: []
+    currentNode: 'intro',
+    history: []
   };
   console.log('Nouvelle partie commencée !');
   // Met à jour l'interface utilisateur pour refléter la nouvelle partie
   mainWindow.webContents.send('update-game-state', gameState);
-}
+});
 
-function saveGameState(state) {
-  const savePath = path.join(app.getPath('userData'), 'savegame.json');
-  fs.writeFileSync(savePath, JSON.stringify(state), 'utf-8');
-  console.log('Partie sauvegardée dans le fichier:', savePath);
-}
+ipcMain.on('load-game-state', () => {
+  closeLoader();
 
-function loadGameState() {
-  const savePath = path.join(app.getPath('userData'), 'savegame.json');
   if (fs.existsSync(savePath)) {
     const savedState = fs.readFileSync(savePath, 'utf-8');
     if(savedState){
-      const gameState = JSON.parse(savedState);
+      gameState = JSON.parse(savedState);
       // Mettre à jour l'interface utilisateur pour refléter la partie chargée
       mainWindow.webContents.send('update-game-state', gameState);
     } else {
       console.log('Aucune sauvegarde trouvée.');
     }
   }
+});
+
+ipcMain.on('save-game-state', (event, state) => {
+  closeLoader();
+
+  fs.writeFileSync(savePath, JSON.stringify(state), 'utf-8');
+  console.log('Partie sauvegardée dans le fichier:', savePath);
+});
+
+ipcMain.on('quit-game', () => {
+  app.quit();
+});
+
+function closeLoader(){
+  if (loaderWindow) {
+    loaderWindow.close();
+    loaderWindow = null;
+  }
 }
+
+ipcMain.handle('get-user-data-path', () => {
+  return app.getPath('userData');
+});
 
 //Modification de la taille d'affiche de la fenêtre
 //Plein écran
