@@ -3,8 +3,9 @@ const path = require('path');
 const fs = require('fs');
 
 // On récupère la valeur dans le json
-const windowJSON = require("./window.json");
+const settingsJSON = require("./assets/data/settings.json");
 const savePath = path.join(app.getPath('userData'), 'savegame.json');
+const appVersion = require('./package.json').version;
 
 let mainWindow;
 let loaderWindow;
@@ -14,10 +15,10 @@ let gameState;
 
 function createLoaderWindow() {
   loaderWindow = new BrowserWindow({
-    width: windowJSON.size[0],
-    height: windowJSON.size[1],
+    width: settingsJSON.size[0],
+    height: settingsJSON.size[1],
     icon: path.join(__dirname, "./assets/images/icon.ico"),
-    fullscreen: windowJSON.fullscreen,
+    fullscreen: settingsJSON.fullscreen,
     resizable: false,
     autoHideMenuBar: true,
     webPreferences: {
@@ -32,10 +33,10 @@ function createLoaderWindow() {
 
 function createMainWindow () {
   mainWindow = new BrowserWindow({
-    width: windowJSON.size[0],
-    height: windowJSON.size[1],
+    width: settingsJSON.size[0],
+    height: settingsJSON.size[1],
     icon: path.join(__dirname, "./assets/images/icon.ico"),
-    fullscreen: windowJSON.fullscreen,
+    fullscreen: settingsJSON.fullscreen,
     resizable: false,
     autoHideMenuBar: true,
     webPreferences: {
@@ -49,7 +50,7 @@ function createMainWindow () {
 
   mainWindow.loadFile('index.html');
 
-  if(windowJSON.maximize){
+  if(settingsJSON.maximize){
     mainWindow.maximize();
   }
 
@@ -130,90 +131,48 @@ ipcMain.handle('get-user-data-path', () => {
   return app.getPath('userData');
 });
 
+// Configure un écouteur IPC pour fournir la version
+ipcMain.handle('get-app-version', () => {
+  return appVersion;
+});
+
+//Modification du mode d'affiche de la fenêtre
+ipcMain.on("set-print-mode", (event, printMode) => {
+  switch(printMode){
+    case "fullscreen":
+      mainWindow.setFullScreen(true);
+      break;
+    case "fullscreen-windowed":
+      mainWindow.setFullScreen(false);
+      mainWindow.maximize();
+      break;
+    case "windowed":
+      mainWindow.setFullScreen(false);
+      mainWindow.unmaximize();
+      break;
+  };
+  console.log("set-to-" + printMode);
+});
+
 //Modification de la taille d'affiche de la fenêtre
-//Plein écran
-ipcMain.on("switch-to-fullscreen", function(event){
-  console.log("switch-to-fullscreen");
-  mainWindow.setContentSize(screenWidth, screenHeight);
-  mainWindow.setFullScreen(true);
-});
-//Plein écran fenêtré
-ipcMain.on("switch-to-maximize", function(event){
-  console.log("switch-to-maximize");
-  mainWindow.setFullScreen(false);
-  mainWindow.maximize();
-  mainWindow.setContentSize(screenWidth, screenHeight);
-});
-//Fenêtré
-ipcMain.on("switch-to-unmaximize", function(event){
-  console.log("switch-to-unmaximize");
-  mainWindow.setFullScreen(false);
-  mainWindow.unmaximize();
+ipcMain.on("set-resolution", (event, resolution) => {
+  console.log("set-to-" + resolution);
+  value = resolution.split('x');
+  mainWindow.setContentSize(parseInt(value[0]), parseInt(value[1]));
   mainWindow.center();
 });
 
-//3840x2160
-ipcMain.on("switch-to-3840x2160", function(event){
-  console.log("switch-to-3840x2160");
-  mainWindow.setContentSize(3840, 2160);
-  mainWindow.center();
-});
-//2560x1600
-ipcMain.on("switch-to-2560x1600", function(event){
-  console.log("switch-to-2560x1600");
-  mainWindow.setContentSize(2560, 1600);
-  mainWindow.center();
-});
-//1920x1200
-ipcMain.on("switch-to-1920x1200", function(event){
-  console.log("switch-to-1920x1200");
-  mainWindow.setContentSize(1920, 1200);
-  mainWindow.center();
-});
-//1920x1080
-ipcMain.on("switch-to-1920x1080", function(event){
-  console.log("switch-to-1920x1080");
-  mainWindow.setContentSize(1920, 1080);
-  mainWindow.center();
-});
-//1600x900
-ipcMain.on("switch-to-1600x900", function(event){
-  console.log("switch-to-1600x900");
-  mainWindow.setContentSize(1600, 900);
-  mainWindow.center();
-});
-//1280x720
-ipcMain.on("switch-to-1280x720", function(event){
-  console.log("switch-to-1280x720");
-  mainWindow.setContentSize(1280, 720);
-  mainWindow.center();
-});
-//800x600
-ipcMain.on("switch-to-800x600", function(event){
-  console.log("switch-to-800x600");
-  mainWindow.setContentSize(800, 600);
-  mainWindow.center();
-});
-
-// sauvegarde des paramètres de la fenêtre 
-ipcMain.on("save-window-settings", function(event){  
-  let window = {
+// Sauvegarde des paramètres de la fenêtre 
+ipcMain.on("save-game-settings", (event, gameSettings) => {
+  let settings = {
+    "music": gameSettings.music,
+    "video": gameSettings.video,
     "size": mainWindow.getSize(),
     "fullscreen": mainWindow.isFullScreen(),
     "maximize": mainWindow.isMaximized()
   }
-
-  try { 
-    let data = JSON.stringify(window, null, 2);
-
-    fs.writeFile('./window.json', data, "utf-8", (err) => {
-        if (err) throw err;
-        console.log('Data written to file');
-    });
-  }
-  catch(e) { alert('Failed to save the file !'); }
+  fs.writeFileSync('./assets/data/settings.json', JSON.stringify(settings), 'utf-8');
 });
-
 
 
 // fermeture de l'application lorsqu'aucune fenêtre n'est ouverte et ce sur les plateformes non-macOS.

@@ -55,36 +55,40 @@
                 <div class="value" id="music-percent"></div>
               </div>
               <div class="item">
-                  <div class="label">Vidéo</div>
-                  <div class="input">
-                      <input type="range" id="video-volume" name="video-volume" 
-                      min="0" max="100" step="1">
-                  </div>
-                  <div class="value" id="video-percent"></div>
+                <div class="label">Vidéo</div>
+                <div class="input">
+                  <input type="range" id="video-volume" name="video-volume" 
+                  value="100" min="0" max="100" step="1">
+                </div>
+                <div class="value" id="video-percent"></div>
               </div>
             </div>
             <div class="content-items" id="window-settings">
               <div class="item">
                 <div class="label">Mode d'affichage</div>
-                <select class="input" id="print-mode">
-                  <option value="1">Plein écran</option>
-                  <option value="2">Plein écran fenêtré</option>
-                  <option value="3">fenêtré</option>
-                </select>
-                <div class="value"><div class="button" id="apply-print-mode-button">Appliquer</div></div>
+                <div></div>
+                <div class="value">
+                  <select class="input" id="print-mode">
+                    <option value="fullscreen">Plein écran</option>
+                    <option value="fullscreen-windowed">Plein écran fenêtré</option>
+                    <option value="windowed">Fenêtré</option>
+                  </select>
+              </div>
               </div>
               <div class="item">
                 <div class="label">Résolution</div>
-                <select class="input" id="resolution">
-                  <option value="1">3840x2160</option>
-                  <option value="2">2560x1600</option>
-                  <option value="3">1920x1200</option>
-                  <option value="4">1920x1080</option>
-                  <option value="5">1600x900</option>
-                  <option value="6">1280x720</option>
-                  <option value="7">800x600</option>
-                </select>
-                <div class="value"><div class="button" id="apply-resolution-button">Appliquer</div></div>
+                <div></div>
+                <div class="value">
+                  <select class="input" id="resolution">
+                    <option value="3840x2160">3840x2160</option>
+                    <option value="2560x1600">2560x1600</option>
+                    <option value="1920x1200">1920x1200</option>
+                    <option value="1920x1080">1920x1080</option>
+                    <option value="1600x900">1600x900</option>
+                    <option value="1280x720">1280x720</option>
+                    <option value="800x600">800x600</option>
+                  </select>
+                </div>
               </div>
             </div>
             <div class="content-items" id="shortcuts-settings">
@@ -109,7 +113,6 @@
           </div>
           <div class="content-button">
             <div class="button" id="back-menu">Retour</div>
-            <div class="button" id="save-settings-button">Sauvegarder</div>
           </div>
       </div>
     </div>

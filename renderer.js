@@ -15,14 +15,18 @@ const loadButton = $("#load-button");
 const settingsButton = $("#settings-button");
 const quitButton = $("#quit-button");
 
+const version = $("#version");
+
 // Settings-menu
 const settingsMenu = $("#settings-menu");
 
 const musicVolume = $("#music-volume");
 const videoVolume = $("#video-volume");
-
 const musicPercent = $("#music-percent");
 const videoPercent = $("#video-percent");
+
+const printModeInput = $("#print-mode");
+const resolutionInput = $("#resolution");
 
 const lastSave = $("#last-save");
 
@@ -58,9 +62,12 @@ let intervalShowChoices;
   //////////////////////////////////
 
 // Lance la musique lors du chargement de l'interface
-$(window).on('DOMContentLoaded', function () {
+$(window).on('DOMContentLoaded', async function () {
     // On lance la musique
     music.play();
+
+    // On affiche la version du jeu
+    version.html("v" + await window.electronAPI.getAppVersion());
 
     // On cache les éléments inutiles
     gameMenu.hide();
@@ -73,6 +80,10 @@ $(window).on('DOMContentLoaded', function () {
     setMusicVolume(musicVolume.val());
     setVideoVolume(videoVolume.val());
 });
+
+function saveGameState() {
+    window.electronAPI.sendSaveGameState(gameState);
+}
 
 newButton.on('click', () => {
     window.electronAPI.sendShowLoader();
@@ -94,6 +105,27 @@ quitButton.on('click', () => {
     window.electronAPI.sendQuitGame();
 });
 
+backButton.on('click', () => {
+    if (gameState.history.length > 0) {
+        gameState.currentNode = gameState.history.pop();
+        updateGameUI(gameState);
+        saveGameState(); // Save the state after going back
+    }
+});
+
+saveButton.on('click', () => {
+    video.pause();
+    window.electronAPI.sendShowLoader();
+    music.load();
+    music.play();
+    closeButton.trigger('click');
+    switchDisplay(gameMenu, mainMenu);
+    updateLoadUI(gameState);
+    setTimeout(() => {
+        saveGameState();
+    }, 2000);
+});
+
 window.electronAPI.loadGameData().then((data) => {
     gameData = data;
     // Initialisation de l'interface du jeu
@@ -102,13 +134,17 @@ window.electronAPI.loadGameData().then((data) => {
 });
 
 window.electronAPI.checkLoadGameState().then((data) => {
+    updateLoadUI(data);
+}).catch((error) => {
+    console.error('Erreur lors du chargement des données du jeu:', error);
+});
+
+function updateLoadUI(data) {
     gameState = data;
     // Modification du bouton charger la partie
     loadButton.removeAttr('disabled');
     lastSave.html(gameState.currentNode.charAt(0).toUpperCase() + gameState.currentNode.slice(1));
-}).catch((error) => {
-    console.error('Erreur lors du chargement des données du jeu:', error);
-});
+}
 
 window.electronAPI.onUpdateGameState((event, state) => {
     updateGameUI(state);
@@ -179,12 +215,6 @@ function switchDisplay(from, to) {
     to.fadeIn('slow');
 }
 
-video.addEventListener('canplay', function () {
-    music.pause();
-    video.play();
-    played = true;
-});
-
 function updateBackButton() {
     if (gameState.history.length > 0) {
         backButton.show();
@@ -193,28 +223,10 @@ function updateBackButton() {
     }
 }
 
-function saveGameState() {
-    window.electronAPI.sendSaveGameState(gameState);
-}
-
-backButton.on('click', () => {
-    if (gameState.history.length > 0) {
-        gameState.currentNode = gameState.history.pop();
-        updateGameUI(gameState);
-        saveGameState(); // Save the state after going back
-    }
-});
-
-saveButton.on('click', () => {
-    video.pause();
-    window.electronAPI.sendShowLoader();
-    music.load();
-    music.play();
-    closeButton.trigger('click');
-    switchDisplay(gameMenu, mainMenu);
-    setTimeout(() => {
-        saveGameState();
-    }, 2000);
+video.addEventListener('canplay', function () {
+    music.pause();
+    video.play();
+    played = true;
 });
 
   //////////////////////////////////
@@ -256,6 +268,15 @@ function onAir(evt){
     content.style.display = "block";
 }
 
+window.electronAPI.getGameSettings().then((data) => {
+    musicVolume.val(Math.round(data.music*100));
+    videoVolume.val(Math.round(data.video*100));
+    setMusicVolume(Math.round(data.music*100));
+    setVideoVolume(Math.round(data.video*100));
+}).catch((error) => {
+    console.error('Erreur lors du chargement des paramètres du jeu:', error);
+});
+
 // AUDIO
 function setMusicVolume(value) {
     // On définit le volume sur 100%
@@ -271,6 +292,14 @@ function setVideoVolume(value) {
     videoPercent.html(" " + value + "%");
 }
 
+function saveGameSettings() {
+    let settings = {
+        "music": music.volume,
+        "video": video.volume
+    }
+    window.electronAPI.sendSaveGameSettings(settings);
+}
+
 // Au mouvement sur le musicVolume
 musicVolume.on('mousemove', () => {
     setMusicVolume(musicVolume.val());
@@ -279,6 +308,25 @@ musicVolume.on('mousemove', () => {
 // Au mouvement sur le videoVolume
 videoVolume.on('mousemove', () => {
     setVideoVolume(videoVolume.val());
+});
+
+
+printModeInput.on("change", () => {
+    window.electronAPI.setPrintMode(printModeInput.val());
+    saveGameSettings();
+});
+
+resolutionInput.on("change", () => {
+    window.electronAPI.setResolution(resolutionInput.val());
+    saveGameSettings();
+});
+
+musicVolume.on('mouseup', () => {
+    saveGameSettings();
+});
+
+videoVolume.on('mouseup', () => {
+    saveGameSettings();
 });
 
 
