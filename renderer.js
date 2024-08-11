@@ -66,19 +66,12 @@ $(window).on('DOMContentLoaded', async function () {
     // On lance la musique
     music.play();
 
-    // On affiche la version du jeu
-    version.html("v" + await window.electronAPI.getAppVersion());
-
     // On cache les éléments inutiles
     gameMenu.hide();
     settingsMenu.hide();
     contentChoices.hide();
     backButton.hide();
     contentGameSettings.hide();
-
-    // Initialisation des volumes
-    setMusicVolume(musicVolume.val());
-    setVideoVolume(videoVolume.val());
 });
 
 function saveGameState() {
@@ -126,9 +119,14 @@ saveButton.on('click', () => {
     }, 2000);
 });
 
+window.electronAPI.getAppVersion().then((data) => {
+    version.html("v" + data );
+});
+
 window.electronAPI.loadGameData().then((data) => {
     gameData = data;
     // Initialisation de l'interface du jeu
+    newButton.removeAttr('disabled');
 }).catch((error) => {
     console.error('Erreur lors du chargement des données du jeu:', error);
 });
@@ -167,13 +165,17 @@ function updateGameUI(state) {
     if(nodeData.video) {
         switchDisplay(contentText, contentVideo);
         video.src = nodeData.video;
+        backSecond.show();
+        nextChoice.show();
         // On crée un moteur qui lance showChoices toutes les centièmes de seconde
         intervalShowChoices = setInterval(showChoices, 100);
     } else {
         video.src = "";
         contentText.html(`<h2>${gameState.currentNode.charAt(0).toUpperCase() + gameState.currentNode.slice(1)}</h2><br/><p id="text-replace">${nodeData.text}</p>`);
+        backSecond.hide();
+        nextChoice.hide();
         switchDisplay(contentVideo, contentText);
-        contentChoices.show();
+        if(nodeData.choices) contentChoices.show();
     }
 
     if (nodeData.choices){

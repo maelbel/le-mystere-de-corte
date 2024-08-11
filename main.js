@@ -9,8 +9,6 @@ const appVersion = require('./package.json').version;
 
 let mainWindow;
 let loaderWindow;
-let screenWidth;
-let screenHeight;
 let gameState;
 
 function createLoaderWindow() {
